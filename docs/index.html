@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Whale Scanner">
+<meta name="theme-color" content="#0b1020"><title>Whale Scanner</title>
+<style>
+:root{--bg:#0b1020;--card:#151b30;--line:#252d4a;--tx:#e8ecf8;--mut:#8b95b8;--acc:#6ea8ff;--g:#3ddc97;--r:#ff6b7a;--y:#ffc857}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 -apple-system,system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{padding:18px 16px 8px}h1{margin:0;font-size:22px}.sub{color:var(--mut);font-size:12px;margin-top:2px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:8px 16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font-size:20px}.stat span{color:var(--mut);font-size:12px}
+.warn{margin:6px 16px;padding:10px 12px;border-radius:10px;background:#3a2a10;color:var(--y);font-size:13px}
+nav{display:flex;gap:6px;padding:10px 16px;position:sticky;top:0;background:var(--bg);overflow-x:auto}
+nav button{flex:1;white-space:nowrap;background:var(--card);color:var(--mut);border:1px solid var(--line);border-radius:20px;padding:8px 12px;font:inherit}
+nav button.on{background:var(--acc);color:#06122b;border-color:var(--acc);font-weight:600}
+main{padding:0 16px 40px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:8px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}.addr{font:13px ui-monospace,monospace;color:var(--acc)}
+.mut{color:var(--mut);font-size:12px}.chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:4px;background:#222a48}
+.g{color:var(--g)}.r{color:var(--r)}.y{color:var(--y)}.bar{height:6px;background:#222a48;border-radius:3px;margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--r)}.rank{font-weight:700;color:var(--y)}.empty{color:var(--mut);text-align:center;padding:30px 0}
+.sheet{position:fixed;inset:0;background:#000a;display:none;align-items:flex-end;z-index:9}.sheet.on{display:flex}
+.sheet>div{background:var(--card);width:100%;max-height:82vh;overflow:auto;border-radius:18px 18px 0 0;padding:16px 16px calc(24px + env(safe-area-inset-bottom))}
+.btn{display:inline-block;background:#222a48;color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 6px 4px 0;font:inherit;font-size:13px;text-decoration:none}
+.btn.p{background:var(--acc);color:#06122b;border-color:var(--acc)}svg{width:100%;height:auto;background:#0e1428;border-radius:12px;border:1px solid var(--line);touch-action:manipulation}
+.lg span{margin-right:12px;font-size:12px;color:var(--mut)}.lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+</style></head><body>
+<header><h1 id="t">Whale Scanner</h1><div class="sub" id="s">Loading…</div></header>
+<div class="stats" id="stats"></div><div id="w"></div>
+<div class="sheet" id="sh"><div id="shc"></div></div><nav id="nav"></nav><main id="m"></main>
+<script>
+const $=id=>document.getElementById(id);
+const EXP="https://robinhoodchain.blockscout.com";
+const esc=x=>String(x??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const n=v=>v==null||isNaN(v)?"–":Intl.NumberFormat("en",{notation:"compact",maximumFractionDigits:2}).format(v);
+const sh=a=>a?a.slice(0,6)+"…"+a.slice(-4):"";
+const A=a=>`<span class="addr" data-a="${esc(a)}">${sh(a)}</span>`;
+let D=null,tab="early",W={};
+const tabs={early:"Early buyers",holders:"Top holders",map:"Link map",profiles:"Wallets",clusters:"Clusters"};
+const fl=a=>(D.wallet_flags||{})[a]||[];
+function flag(p){if(p==null)return"";if(p>100)return'<span class="chip y">check data</span>';
+ if(p>=90)return'<span class="chip r">sold out</span>';if(p<10)return'<span class="chip g">still holding</span>';return'<span class="chip">partial sell</span>'}
+const chips=a=>fl(a).map(f=>`<span class="chip y">${esc(f.split(" (")[0])}</span>`).join("");
+function bar(p){return p==null?"":`<div class="bar"><i style="width:${Math.min(100,p)}%"></i></div>`}
+const views={
+ early:()=>(D.early_buyers||[]).map(e=>`<div class="card"><div class="row"><span><span class="rank">#${e.buy_rank}</span> ${A(e.wallet)}</span>${flag(e.sold_pct)}</div>
+ <div class="mut">Bought ${n(e.bought)} · ${e.buys} buys · sold ${e.sold_pct??"–"}% · block ${e.first_buy_block}</div><div>${chips(e.wallet)}</div>${bar(e.sold_pct)}</div>`),
+ holders:()=>(D.top_holders||[]).map((h,i)=>`<div class="card"><div class="row"><span class="mut">${i+1}</span>${A(h.wallet)}<b>${n(h.balance)}</b></div>
+ <div class="mut">${h.early_rank?"Early buyer #"+h.early_rank+" · sold "+(h.sold_pct??"–")+"%":"Not in early buyers"}${h.wallet===D.pool_guess?" · likely liquidity pool":""}</div><div>${chips(h.wallet)}</div></div>`),
+ profiles:()=>(D.profiles||[]).map(p=>`<div class="card"><div class="row">${A(p.wallet)}<b>${p.eth_balance==null?"–":p.eth_balance.toFixed(3)+" ETH"}</b></div>
+ <div class="mut">${p.stats?"Bought "+n(p.stats.bought)+" · sold "+(p.stats.sold_pct??"–")+"% · rank #"+(p.stats.buy_rank||"–"):"No trades of this token"}</div><div>${chips(p.wallet)}</div>
+ <div style="margin-top:6px">${p.other_token_count?`<span class="mut">${p.other_token_count} other tokens:</span> `+p.other_tokens.slice(0,8).map(t=>`<span class="chip">${esc(t.symbol||sh(t.token))}</span>`).join(""):'<span class="mut">No other tokens</span>'}</div></div>`),
+ clusters:()=>{const c=(D.balance_clusters||[]).map(c=>`<div class="card"><b>${c.wallets.length} wallets ≈ ${n(c.approx_balance)} each</b>
+ <div class="mut">Near-identical balances: possible airdrop or linked wallets</div><div style="margin-top:6px">${c.wallets.map(A).join("<br>")}</div></div>`);
+  const f=Object.entries(D.shared_funders||{}).map(([f,v])=>`<div class="card"><b class="y">Shared funder ${A(f)}</b><div class="mut">Sent the first ETH to ${v.length} of these wallets</div><div style="margin-top:6px">${v.map(A).join("<br>")}</div></div>`);
+  return f.concat(c)},
+ map:()=>['<div class="lg"><span><i style="background:#6ea8ff"></i>early buyer</span><span><i style="background:#3ddc97"></i>holder</span><span><i style="background:#ffc857"></i>funder</span></div><div class="mut" style="margin:6px 0">Solid yellow = funded by. Dashed = sent tokens. Red ring = flagged. Tap a bubble.</div><div id="svg"></div>']
+};
+function draw(){$("nav").innerHTML=Object.entries(tabs).map(([k,v])=>`<button class="${k==tab?"on":""}" data-t="${k}">${v}</button>`).join("");
+ const h=views[tab]();$("m").innerHTML=h.length?h.join(""):'<div class="empty">Nothing to show</div>';if(tab=="map")map()}
+function map(){const F=D.funders||{},E=D.transfer_edges||[],ids=new Set(),ed=[];
+ Object.entries(F).forEach(([a,f])=>{ids.add(a);ids.add(f);ed.push([f,a,"f"])});E.forEach(e=>{ids.add(e.from);ids.add(e.to);ed.push([e.from,e.to,"t"])});
+ const fset=new Set(Object.values(F));let ns=[...ids].slice(0,150).map((a,i,arr)=>{const r=W[a]||{},v=r.e?r.e.bought:r.h?r.h.balance:0;
+  return{a,v,x:180+120*Math.cos(i*6.28/arr.length),y:230+150*Math.sin(i*6.28/arr.length),vx:0,vy:0,c:fset.has(a)?"#ffc857":r.e?"#6ea8ff":"#3ddc97"}});
+ if(!ed.length){$("svg").innerHTML='<div class="empty">No links found yet. Re-run the scanner with the latest version.</div>';return}
+ const ix={};ns.forEach((o,i)=>ix[o.a]=i);const es=ed.filter(e=>e[0] in ix&&e[1] in ix);const mx=Math.max(1,...ns.map(o=>o.v));
+ ns.forEach(o=>o.r=fset.has(o.a)?9+3*Math.min(6,(D.shared_funders[o.a]||[]).length):5+9*Math.sqrt(o.v/mx));
+ for(let k=0;k<300;k++){for(const p of ns){for(const q of ns){if(p==q)continue;let dx=p.x-q.x,dy=p.y-q.y,d=Math.hypot(dx,dy)||1;if(d<90){const f=(90-d)*.02;p.vx+=dx/d*f;p.vy+=dy/d*f}}
+  p.vx+=(180-p.x)*.004;p.vy+=(230-p.y)*.004}
+  for(const [a,b] of es){const p=ns[ix[a]],q=ns[ix[b]];const dx=q.x-p.x,dy=q.y-p.y,d=Math.hypot(dx,dy)||1,f=(d-60)*.03;p.vx+=dx/d*f;p.vy+=dy/d*f;q.vx-=dx/d*f;q.vy-=dy/d*f}
+  for(const p of ns){p.x=Math.max(20,Math.min(340,p.x+p.vx));p.y=Math.max(20,Math.min(440,p.y+p.vy));p.vx*=.6;p.vy*=.6}}
+ $("svg").innerHTML=`<svg viewBox="0 0 360 460">`+es.map(([a,b,t])=>{const p=ns[ix[a]],q=ns[ix[b]];return`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="${t=="f"?"#ffc857":"#8b95b8"}" stroke-width="1.2" ${t=="t"?'stroke-dasharray="3 3"':""} opacity=".7"/>`}).join("")+
+  ns.map(o=>`<circle data-a="${o.a}" cx="${o.x}" cy="${o.y}" r="${o.r}" fill="${o.c}" fill-opacity=".85" stroke="${fl(o.a).some(f=>f.startsWith("sniper"))?"#ff6b7a":"#0b1020"}" stroke-width="2"/>`).join("")+`</svg>`}
+function sheet(a){const r=W[a]||{},f=(D.funders||{})[a],kids=(D.shared_funders||{})[a],sib=f?((D.shared_funders||{})[f]||[]).filter(x=>x!=a):[],p=(D.profiles||[]).find(x=>x.wallet==a);
+ $("shc").innerHTML=`<div class="addr" style="word-break:break-all">${esc(a)}</div><div style="margin:8px 0">${chips(a)}</div>
+ <button class="btn p" data-c="${esc(a)}">Copy address</button><a class="btn" target="_blank" href="${EXP}/address/${a}">Transactions ↗</a><a class="btn" target="_blank" href="${EXP}/address/${a}?tab=token_transfers">Token transfers ↗</a>
+ <div class="mut" style="margin-top:8px">${r.e?`Early buyer #${r.e.buy_rank}: bought ${n(r.e.bought)}, sold ${r.e.sold_pct??"–"}%, block ${r.e.first_buy_block}<br>`:""}${r.h?`Holds ${n(r.h.balance)} tokens<br>`:""}${p?`ETH balance ${p.eth_balance==null?"–":p.eth_balance.toFixed(3)} · ${p.other_token_count} other tokens<br>`:""}</div>
+ ${f?`<div style="margin-top:8px"><b>Funded by</b> ${A(f)} <a class="btn" target="_blank" href="${EXP}/address/${f}">↗</a></div>`:""}
+ ${sib.length?`<div style="margin-top:6px"><b class="y">Same funder as ${sib.length} other wallet(s):</b><br>${sib.map(A).join("<br>")}</div>`:""}
+ ${kids?`<div style="margin-top:6px"><b class="y">Funded ${kids.length} wallets:</b><br>${kids.map(A).join("<br>")}</div>`:""}
+ ${p&&p.other_tokens.length?`<div style="margin-top:8px"><b>Other tokens</b><br>${p.other_tokens.slice(0,15).map(t=>`<a class="chip" target="_blank" href="${EXP}/token/${t.token}">${esc(t.symbol||sh(t.token))}</a>`).join("")}</div>`:""}
+ <div style="margin-top:12px"><button class="btn" data-x="1">Close</button></div>`;$("sh").classList.add("on")}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-t]");if(t){tab=t.dataset.t;draw();return}
+ const c=e.target.closest("[data-c]");if(c){navigator.clipboard&&navigator.clipboard.writeText(c.dataset.c);c.textContent="Copied ✓";return}
+ if(e.target.closest("[data-x]")||e.target===$("sh")){$("sh").classList.remove("on");return}
+ const a=e.target.closest("[data-a]");if(a)sheet(a.dataset.a)});
+fetch("latest.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;
+ (d.early_buyers||[]).forEach(e=>(W[e.wallet]=W[e.wallet]||{}).e=e);(d.top_holders||[]).forEach(h=>(W[h.wallet]=W[h.wallet]||{}).h=h);
+ $("t").textContent=(d.symbol||"Token")+" scan";$("s").textContent="Updated "+d.generated+" · "+sh(d.token);
+ $("stats").innerHTML=[["Transfers read",n(d.transfers_read)],["Early buyers",(d.early_buyers||[]).length],
+  ["Shared funders",Object.keys(d.shared_funders||{}).length],["Same-balance clusters",(d.balance_clusters||[]).length]].map(([k,v])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("");
+ if(d.truncated&&Object.keys(d.truncated).length)$("w").innerHTML='<div class="warn">History was cut off, so early buyers may be incomplete. Raise MAX_PAGES.</div>';
+ draw()}).catch(()=>{$("s").textContent="No data yet. Run the Scan token workflow first."});
+</script></body></html>
