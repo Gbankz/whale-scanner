@@ -8,7 +8,7 @@ import requests
 KEY = os.environ.get("BLOCKSCOUT_API_KEY", "")
 BASE = "https://api.blockscout.com/4663/api/v2"
 TOKEN = (sys.argv[1] if len(sys.argv) > 1 else os.environ.get("TOKEN", "")).strip().lower()
-MAX_PAGES = int(os.environ.get("MAX_PAGES", "100"))    # transfer pages to read
+MAX_PAGES = int(os.environ.get("MAX_PAGES", "3000"))    # transfer pages to read
 EARLY_N = int(os.environ.get("EARLY_N", "50"))         # how many first buyers to keep
 PROFILE_N = int(os.environ.get("PROFILE_N", "15"))     # wallets to deep-profile
 POOL = os.environ.get("POOL", "").strip().lower()      # optional: force pool address
@@ -35,15 +35,18 @@ def addr(x):
         return (x.get("hash") or x.get("address_hash") or x.get("address") or "").lower()
     return (x or "").lower()
 
+TRUNCATED = {}
 def fetch_all(path, max_pages):
     items, params = [], {}
-    for _ in range(max_pages):
+    for i in range(max_pages):
         d = get(path, params)
         if not d: break
         items += d.get("items", [])
         nxt = d.get("next_page_params")
         if not nxt: break
         params = nxt
+        if i == max_pages - 1: TRUNCATED[path] = True
+        if i and i % 100 == 0: print(f"  ...{len(items)} items read", flush=True)
     return items
 
 def main():
@@ -76,31 +79,61 @@ def main():
     def wal(a):
         return w.setdefault(a, dict(wallet=a, buys=0, sells=0, bought=0.0, sold=0.0,
                                     first_buy_block=None, first_buy_time=None, buy_rank=None))
-    order = 0
+    def near(a, b): return a > 0 and abs(a - b) <= 0.05 * a
+
+    # group transfers by transaction so router hops (pool -> router -> wallet) resolve to the real wallet
+    groups, order_keys = {}, []
     for t in tr:
-        f, to, amt = addr(t.get("from")), addr(t.get("to")), amount(t)
-        if f == pool and to not in (pool, ZERO):
-            s = wal(to); s["buys"] += 1; s["bought"] += amt
-            if s["first_buy_block"] is None:
-                order += 1
-                s.update(first_buy_block=t.get("block_number"), first_buy_time=t.get("timestamp"), buy_rank=order)
-        elif to == pool and f not in (pool, ZERO):
-            s = wal(f); s["sells"] += 1; s["sold"] += amt
+        k = t.get("transaction_hash") or t.get("tx_hash") or id(t)
+        if k not in groups: groups[k] = []; order_keys.append(k)
+        groups[k].append(t)
+
+    order = 0
+    for k in order_keys:
+        g = groups[k]
+        for t in g:
+            f, to, amt = addr(t.get("from")), addr(t.get("to")), amount(t)
+            if f == pool and to not in (pool, ZERO):        # BUY: follow forwards to the end wallet
+                who = to
+                for _ in range(3):
+                    nxt = [x for x in g if addr(x.get("from")) == who and near(amt, amount(x)) and addr(x.get("to")) not in (pool, ZERO)]
+                    if not nxt: break
+                    who = addr(nxt[0].get("to"))
+                if who in (pool, ZERO): continue
+                s = wal(who); s["buys"] += 1; s["bought"] += amt
+                if s["first_buy_block"] is None:
+                    order += 1
+                    s.update(first_buy_block=t.get("block_number"), first_buy_time=t.get("timestamp"), buy_rank=order)
+            elif to == pool and f not in (pool, ZERO):     # SELL: trace back to the wallet that started it
+                who = f
+                for _ in range(3):
+                    prv = [x for x in g if addr(x.get("to")) == who and near(amt, amount(x)) and addr(x.get("from")) not in (pool, ZERO)]
+                    if not prv: break
+                    who = addr(prv[0].get("from"))
+                s = wal(who); s["sells"] += 1; s["sold"] += amt
 
     for s in w.values():
         s["sold_pct"] = round(100 * s["sold"] / s["bought"], 1) if s["bought"] else None
 
     early = sorted([s for s in w.values() if s["buy_rank"]], key=lambda s: s["buy_rank"])[:EARLY_N]
 
-    holders = fetch_all(f"/tokens/{TOKEN}/holders", 3)
+    holders = fetch_all(f"/tokens/{TOKEN}/holders", 6)
     top = []
-    for h in holders[:25]:
+    for h in holders[:100]:
         a = addr(h.get("address"))
         try: bal = int(h.get("value") or 0) / 10 ** dec
         except Exception: bal = 0
         top.append(dict(wallet=a, balance=bal, early_rank=(w.get(a) or {}).get("buy_rank"),
                         sold_pct=(w.get(a) or {}).get("sold_pct")))
     print("Top holders loaded:", len(top))
+    # flag groups of holders with near-identical balances (possible airdrop / linked wallets)
+    clusters, used = [], set()
+    for i, a in enumerate(top):
+        if i in used or a["balance"] <= 0: continue
+        grp = [j for j, b in enumerate(top) if j not in used and abs(b["balance"] - a["balance"]) <= 0.03 * a["balance"]]
+        if len(grp) >= 4:
+            used.update(grp)
+            clusters.append(dict(approx_balance=round(a["balance"]), wallets=[top[j]["wallet"] for j in grp]))
 
     # Deep profile: early buyers still relevant + top holders
     targets = []
@@ -123,13 +156,64 @@ def main():
                              other_token_count=len(others), stats=w.get(a)))
         time.sleep(0.3)
 
+    # ---- link tracing: who funded each wallet, and who moved tokens between them ----
+    FUNDER_N = int(os.environ.get("FUNDER_N", "60"))
+    cl_wallets = {c for cl in clusters for c in cl["wallets"]}
+    watch = [a for a in dict.fromkeys([e["wallet"] for e in early] + [t["wallet"] for t in top] + list(cl_wallets)) if a and a != pool]
+    def blk(t): return int(t.get("block_number") or t.get("block") or 0)
+    def funder_of(a):
+        d = get(f"/addresses/{a}/transactions", {"sort": "block_number", "order": "asc"}) or {}
+        items = d.get("items", [])
+        if len(items) > 1 and blk(items[0]) > blk(items[-1]):   # sort ignored -> page manually
+            items, p = [], {}
+            for _ in range(8):
+                d = get(f"/addresses/{a}/transactions", p) or {}
+                items += d.get("items", [])
+                p = d.get("next_page_params")
+                if not p: break
+            items = items[::-1] if not p else []               # only trust a full history
+        for t in items:
+            try:
+                if addr(t.get("to")) == a and int(t.get("value") or 0) > 0: return addr(t.get("from"))
+            except Exception: pass
+        return None
+    funders = {}
+    for a in watch[:FUNDER_N]:
+        f = funder_of(a)
+        if f: funders[a] = f
+        time.sleep(0.25)
+    by_f = collections.defaultdict(list)
+    for a, f in funders.items(): by_f[f].append(a)
+    shared = {f: v for f, v in by_f.items() if len(v) >= 2}
+    wset = set(watch)
+    edges = collections.Counter()
+    for t in tr:
+        f, to = addr(t.get("from")), addr(t.get("to"))
+        if f in wset and to in wset and f != to: edges[(f, to)] += amount(t)
+    transfer_edges = [dict(**{"from": f}, to=to, amount=v) for (f, to), v in edges.most_common(300)]
+    launch = int(early[0]["first_buy_block"] or 0) if early else 0
+    flags = {}
+    for e in early:
+        fl = flags.setdefault(e["wallet"], [])
+        if launch and int(e["first_buy_block"] or 0) - launch <= 50: fl.append("sniper (bought within ~5s of launch)")
+    for f, v in shared.items():
+        for a in v: flags.setdefault(a, []).append("shared funder")
+    for a in cl_wallets: flags.setdefault(a, []).append("same-balance cluster")
+    print(f"Funders found: {len(funders)}, shared funders: {len(shared)}, wallet-to-wallet transfers: {len(transfer_edges)}")
+
     out = dict(token=TOKEN, symbol=symbol, pool_guess=pool, transfers_read=len(tr),
-               early_buyers=early, top_holders=top, profiles=profiles,
+               truncated=TRUNCATED, first_transfer_block=tr[0].get("block_number"), first_transfer_from=addr(tr[0].get("from")),
+               balance_clusters=clusters, funders=funders, shared_funders=shared, transfer_edges=transfer_edges, wallet_flags=flags, early_buyers=early, top_holders=top[:25], profiles=profiles,
                generated=time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()))
     os.makedirs("docs", exist_ok=True)
     with open(f"docs/{symbol}_{TOKEN[:8]}.json", "w") as fh: json.dump(out, fh, indent=2, default=str)
     with open("docs/latest.json", "w") as fh: json.dump(out, fh, indent=2, default=str)
 
+    print(f"\nFirst transfer: block {tr[0].get('block_number')} from {addr(tr[0].get('from'))}")
+    print("HISTORY TRUNCATED - raise MAX_PAGES" if TRUNCATED else "Full history loaded")
+    print(f"Same-balance clusters (4+ wallets): {len(clusters)}")
+    for c in clusters[:5]:
+        print(f"  ~{c['approx_balance']} x{len(c['wallets'])} wallets")
     print("\n=== EARLY BUYERS (first 15) ===")
     for e in early[:15]:
         print(f"#{e['buy_rank']:>3} {e['wallet']} bought {e['bought']:.0f} sold {e['sold_pct']}% block {e['first_buy_block']}")
