@@ -1,0 +1,3233 @@
+{
+  "token": "0x73c2de14c7fa0a57cc2d9722b959ea70b881ffe4",
+  "symbol": "BOOMER",
+  "pool_guess": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+  "transfers_read": 5000,
+  "early_buyers": [
+    {
+      "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+      "buys": 708,
+      "sells": 363,
+      "bought": 6122838.645458698,
+      "sold": 6122491.941727422,
+      "first_buy_block": 68633234,
+      "first_buy_time": "2026-09-21T07:53:59.000000Z",
+      "buy_rank": 1,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0x6aa80dbbed9ae5ab45fbf61f9644fada3b29326e",
+      "buys": 350,
+      "sells": 22,
+      "bought": 64397760.11390371,
+      "sold": 1010162.4595342347,
+      "first_buy_block": 68633234,
+      "first_buy_time": "2026-09-21T07:53:59.000000Z",
+      "buy_rank": 2,
+      "sold_pct": 1.6
+    },
+    {
+      "wallet": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+      "buys": 117,
+      "sells": 149,
+      "bought": 16204706.916851874,
+      "sold": 43593736.72530667,
+      "first_buy_block": 68634710,
+      "first_buy_time": "2026-09-21T07:56:27.000000Z",
+      "buy_rank": 3,
+      "sold_pct": 269.0
+    },
+    {
+      "wallet": "0x0005ea38eb0a69d1253508ebdbdb9ea8cb26b5ef",
+      "buys": 76,
+      "sells": 170,
+      "bought": 4823247.644376555,
+      "sold": 31214295.815571144,
+      "first_buy_block": 68668322,
+      "first_buy_time": "2026-09-21T08:52:49.000000Z",
+      "buy_rank": 4,
+      "sold_pct": 647.2
+    },
+    {
+      "wallet": "0x6a02085e2430780c07ff8c45c1b56dfe2352f9b1",
+      "buys": 1,
+      "sells": 0,
+      "bought": 35296.96178857567,
+      "sold": 0.0,
+      "first_buy_block": 68670482,
+      "first_buy_time": "2026-09-21T08:56:26.000000Z",
+      "buy_rank": 5,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x09ad820aac5779683b481c4674208a4e1b024afa",
+      "buys": 3,
+      "sells": 1,
+      "bought": 201732.84865755445,
+      "sold": 6719.753990263562,
+      "first_buy_block": 68681518,
+      "first_buy_time": "2026-09-21T09:14:59.000000Z",
+      "buy_rank": 6,
+      "sold_pct": 3.3
+    },
+    {
+      "wallet": "0x18ce40bf88e38ffe57201dade3cc88a415c2dbcf",
+      "buys": 12,
+      "sells": 0,
+      "bought": 243489.93110382967,
+      "sold": 0.0,
+      "first_buy_block": 68694710,
+      "first_buy_time": "2026-09-21T09:37:08.000000Z",
+      "buy_rank": 7,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+      "buys": 8,
+      "sells": 0,
+      "bought": 1116248.6689680424,
+      "sold": 0.0,
+      "first_buy_block": 68723527,
+      "first_buy_time": "2026-09-21T10:25:23.000000Z",
+      "buy_rank": 8,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x6ad7b44448fb5f3a7433400bb3dc0d28db782fe1",
+      "buys": 1,
+      "sells": 0,
+      "bought": 35866.77530651988,
+      "sold": 0.0,
+      "first_buy_block": 68824250,
+      "first_buy_time": "2026-09-21T13:14:14.000000Z",
+      "buy_rank": 9,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xc8e2d50972d3a9195f5bf7ffcc7cf6c14726e9b9",
+      "buys": 2,
+      "sells": 1,
+      "bought": 129344.58307614482,
+      "sold": 3571431.005142527,
+      "first_buy_block": 68916161,
+      "first_buy_time": "2026-09-21T15:47:46.000000Z",
+      "buy_rank": 10,
+      "sold_pct": 2761.2
+    },
+    {
+      "wallet": "0x5577993f1967c439cafe1f97dfb447767653d283",
+      "buys": 1,
+      "sells": 1,
+      "bought": 1951.8661797204616,
+      "sold": 3095.873387895834,
+      "first_buy_block": 68961990,
+      "first_buy_time": "2026-09-21T17:04:07.000000Z",
+      "buy_rank": 11,
+      "sold_pct": 158.6
+    },
+    {
+      "wallet": "0x095fe61e8741d39e14bf0f78f7034db81f2b91c6",
+      "buys": 8,
+      "sells": 2,
+      "bought": 2398530.17519691,
+      "sold": 880247.9295505917,
+      "first_buy_block": 68994611,
+      "first_buy_time": "2026-09-21T17:58:37.000000Z",
+      "buy_rank": 12,
+      "sold_pct": 36.7
+    },
+    {
+      "wallet": "0x4dc18b5246eb80000afac62b8617501d2976ef20",
+      "buys": 3,
+      "sells": 1,
+      "bought": 282425.1957588878,
+      "sold": 97056.84718359243,
+      "first_buy_block": 69078979,
+      "first_buy_time": "2026-09-21T20:19:35.000000Z",
+      "buy_rank": 13,
+      "sold_pct": 34.4
+    },
+    {
+      "wallet": "0x03ec01fa7dc1de17128032a7d5852075a0d727d2",
+      "buys": 1,
+      "sells": 1,
+      "bought": 536893.11754192,
+      "sold": 1606690.5888894878,
+      "first_buy_block": 69221712,
+      "first_buy_time": "2026-09-22T00:18:46.000000Z",
+      "buy_rank": 14,
+      "sold_pct": 299.3
+    },
+    {
+      "wallet": "0x505d4706073ef3a3d789debd0defb7004b504db7",
+      "buys": 1,
+      "sells": 0,
+      "bought": 248.52781208037885,
+      "sold": 0.0,
+      "first_buy_block": 69452664,
+      "first_buy_time": "2026-09-22T06:47:40.000000Z",
+      "buy_rank": 15,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x53755e97bdf8e4dfbe124477a9837ab818b4a9ff",
+      "buys": 1,
+      "sells": 0,
+      "bought": 6705.1053044960945,
+      "sold": 0.0,
+      "first_buy_block": 69464718,
+      "first_buy_time": "2026-09-22T07:08:10.000000Z",
+      "buy_rank": 16,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x28f6fdb1549c617af2eec12f0e63f48417d840c3",
+      "buys": 3,
+      "sells": 4,
+      "bought": 92219.90319923854,
+      "sold": 1155277.4023730801,
+      "first_buy_block": 69752027,
+      "first_buy_time": "2026-09-22T15:11:28.000000Z",
+      "buy_rank": 17,
+      "sold_pct": 1252.7
+    },
+    {
+      "wallet": "0x62fc80823e766e4cc7cce3ca745d6bb39fbcf4ca",
+      "buys": 1,
+      "sells": 1,
+      "bought": 4931.786641749521,
+      "sold": 4931.786641749521,
+      "first_buy_block": 69827721,
+      "first_buy_time": "2026-09-22T17:18:02.000000Z",
+      "buy_rank": 18,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0xe189403cee73e03789828dec19cf237f55aabe30",
+      "buys": 1,
+      "sells": 1,
+      "bought": 54081.01668707085,
+      "sold": 54081.01668707085,
+      "first_buy_block": 69827726,
+      "first_buy_time": "2026-09-22T17:18:02.000000Z",
+      "buy_rank": 19,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0xcaca9e5ad7108f434dc013f047c1ddcff43a6b39",
+      "buys": 2,
+      "sells": 0,
+      "bought": 1919218.9004759141,
+      "sold": 0.0,
+      "first_buy_block": 69830778,
+      "first_buy_time": "2026-09-22T17:23:09.000000Z",
+      "buy_rank": 20,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xa602e6558ef2b5df0218b8991cc0d5b936dcfde6",
+      "buys": 3,
+      "sells": 0,
+      "bought": 1664691.0254243766,
+      "sold": 0.0,
+      "first_buy_block": 69830820,
+      "first_buy_time": "2026-09-22T17:23:13.000000Z",
+      "buy_rank": 21,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x60e163907ca0cc42731665606060c683c469ea99",
+      "buys": 2,
+      "sells": 2,
+      "bought": 34707.13609242586,
+      "sold": 34707.13609242586,
+      "first_buy_block": 69832825,
+      "first_buy_time": "2026-09-22T17:26:35.000000Z",
+      "buy_rank": 22,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0x2ca37ff95caf25366ef16fc2e655b78a165d125f",
+      "buys": 3,
+      "sells": 5,
+      "bought": 421076.20270902547,
+      "sold": 437041.45125511714,
+      "first_buy_block": 69833019,
+      "first_buy_time": "2026-09-22T17:26:55.000000Z",
+      "buy_rank": 23,
+      "sold_pct": 103.8
+    },
+    {
+      "wallet": "0x2069804e62d6c250ed3e000bdd045f7873c38e02",
+      "buys": 3,
+      "sells": 1,
+      "bought": 8259983.4451845065,
+      "sold": 2070968.7884660403,
+      "first_buy_block": 69833256,
+      "first_buy_time": "2026-09-22T17:27:17.000000Z",
+      "buy_rank": 24,
+      "sold_pct": 25.1
+    },
+    {
+      "wallet": "0x312bbfae76c5a0ebaf6cfb2c4d72855e2f704147",
+      "buys": 1,
+      "sells": 1,
+      "bought": 430704.5904282615,
+      "sold": 430704.5904282615,
+      "first_buy_block": 69836164,
+      "first_buy_time": "2026-09-22T17:32:10.000000Z",
+      "buy_rank": 25,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0xd49027d96b89b74496351045f99853bd60b4a3ba",
+      "buys": 7,
+      "sells": 0,
+      "bought": 3385614.220512821,
+      "sold": 0.0,
+      "first_buy_block": 69858606,
+      "first_buy_time": "2026-09-22T18:09:45.000000Z",
+      "buy_rank": 26,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x1521027b665fa38fa4a642991607ad708376dd7b",
+      "buys": 2,
+      "sells": 2,
+      "bought": 4354.772461452848,
+      "sold": 4354.772461452848,
+      "first_buy_block": 69868338,
+      "first_buy_time": "2026-09-22T18:26:01.000000Z",
+      "buy_rank": 27,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0xea51d2b6340ae412e81fcd5f64326ac459b8464c",
+      "buys": 1,
+      "sells": 0,
+      "bought": 7659659.487156149,
+      "sold": 0.0,
+      "first_buy_block": 69874465,
+      "first_buy_time": "2026-09-22T18:36:16.000000Z",
+      "buy_rank": 28,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x712f8d13be1d5848d5ac41fe645fbc6e94972184",
+      "buys": 1,
+      "sells": 1,
+      "bought": 1099848.5031546631,
+      "sold": 329954.55094639893,
+      "first_buy_block": 69874466,
+      "first_buy_time": "2026-09-22T18:36:16.000000Z",
+      "buy_rank": 29,
+      "sold_pct": 30.0
+    },
+    {
+      "wallet": "0x3770e4dee3a7ca1087b893b0722db59024f7b56e",
+      "buys": 2,
+      "sells": 0,
+      "bought": 2543075.775117039,
+      "sold": 0.0,
+      "first_buy_block": 69875019,
+      "first_buy_time": "2026-09-22T18:37:12.000000Z",
+      "buy_rank": 30,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x3471e3f1d6fb368ce026a959666dd1c98fa1c4e9",
+      "buys": 1,
+      "sells": 0,
+      "bought": 1838319.8541811267,
+      "sold": 0.0,
+      "first_buy_block": 69875807,
+      "first_buy_time": "2026-09-22T18:38:28.000000Z",
+      "buy_rank": 31,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x75dcd058a68ad02b13d19c8cea57333773aad3f7",
+      "buys": 1,
+      "sells": 0,
+      "bought": 33290.03930387444,
+      "sold": 0.0,
+      "first_buy_block": 69880357,
+      "first_buy_time": "2026-09-22T18:46:06.000000Z",
+      "buy_rank": 32,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x80c4976a56c39e3f63b39ed4bb0ec57ade2047c4",
+      "buys": 2,
+      "sells": 0,
+      "bought": 3098324.844798306,
+      "sold": 0.0,
+      "first_buy_block": 69881105,
+      "first_buy_time": "2026-09-22T18:47:21.000000Z",
+      "buy_rank": 33,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x3f2ac3aff3c200a0a2826a69a4aaf9004805e588",
+      "buys": 1,
+      "sells": 0,
+      "bought": 37092.99744164723,
+      "sold": 0.0,
+      "first_buy_block": 69906078,
+      "first_buy_time": "2026-09-22T19:29:09.000000Z",
+      "buy_rank": 34,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xc4b6cb96bcc89bd29026a287fcf932031c4729bd",
+      "buys": 12,
+      "sells": 0,
+      "bought": 827116.3093643757,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 35,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x3fc798c35a21a5039a26bb56719c8a3632b0b6a5",
+      "buys": 2,
+      "sells": 0,
+      "bought": 143658.6829029104,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 36,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x3ccadbb77629caaa0f072659f69d4fd8f9000ce9",
+      "buys": 2,
+      "sells": 0,
+      "bought": 159315.1987452057,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 37,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xe674b9da8c38dc1b6a895bf9bef4b1abf6cc960c",
+      "buys": 2,
+      "sells": 0,
+      "bought": 173292.07723428193,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 38,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x4fe4e78330fb643e4f2cc145b9f28663238f6e01",
+      "buys": 2,
+      "sells": 0,
+      "bought": 139925.7900393852,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 39,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x21046048d85ddf170091e8935d96c4b4d7543c08",
+      "buys": 6,
+      "sells": 0,
+      "bought": 415856.35449133406,
+      "sold": 0.0,
+      "first_buy_block": 69953363,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 40,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xe1445cb6deb86c8af3e8f160d008fba9c508b7a3",
+      "buys": 2,
+      "sells": 0,
+      "bought": 139275.95722929607,
+      "sold": 0.0,
+      "first_buy_block": 69953364,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 41,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x828ec5aca63179881e0e37d1cac9d8744bc94bc1",
+      "buys": 12,
+      "sells": 0,
+      "bought": 825336.8404229201,
+      "sold": 0.0,
+      "first_buy_block": 69953364,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 42,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xb1f1870e70f95455aa507047452e534ebc36dfa5",
+      "buys": 3,
+      "sells": 0,
+      "bought": 206868.03329429767,
+      "sold": 0.0,
+      "first_buy_block": 69953364,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 43,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xe0e1cde8d02690885d5ed1d07f4fae695d9b5a7a",
+      "buys": 5,
+      "sells": 0,
+      "bought": 326417.2754165526,
+      "sold": 0.0,
+      "first_buy_block": 69953364,
+      "first_buy_time": "2026-09-22T20:48:30.000000Z",
+      "buy_rank": 44,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xd1738cb60d793af38296f83ce11770c66d81a819",
+      "buys": 1,
+      "sells": 0,
+      "bought": 1414653.4268256193,
+      "sold": 0.0,
+      "first_buy_block": 69953772,
+      "first_buy_time": "2026-09-22T20:49:11.000000Z",
+      "buy_rank": 45,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+      "buys": 1,
+      "sells": 2,
+      "bought": 14075.980461234276,
+      "sold": 11306.397628317138,
+      "first_buy_block": 69983554,
+      "first_buy_time": "2026-09-22T21:39:01.000000Z",
+      "buy_rank": 46,
+      "sold_pct": 80.3
+    },
+    {
+      "wallet": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+      "buys": 1,
+      "sells": 3,
+      "bought": 224182.41967436785,
+      "sold": 2168183.451985886,
+      "first_buy_block": 70001392,
+      "first_buy_time": "2026-09-22T22:08:49.000000Z",
+      "buy_rank": 47,
+      "sold_pct": 967.2
+    },
+    {
+      "wallet": "0xdd38cf655f244f29538d3dc59997617d0411933c",
+      "buys": 6,
+      "sells": 0,
+      "bought": 40000.27393664475,
+      "sold": 0.0,
+      "first_buy_block": 70020898,
+      "first_buy_time": "2026-09-22T22:41:30.000000Z",
+      "buy_rank": 48,
+      "sold_pct": 0.0
+    },
+    {
+      "wallet": "0xc24a6cb58a8d513576e6946c7e70a065b1242d04",
+      "buys": 2,
+      "sells": 1,
+      "bought": 1030270.0475639018,
+      "sold": 1030270.0475639016,
+      "first_buy_block": 70121720,
+      "first_buy_time": "2026-09-23T01:30:34.000000Z",
+      "buy_rank": 49,
+      "sold_pct": 100.0
+    },
+    {
+      "wallet": "0xb9736973bc216ddf86920a364e39b81b22875173",
+      "buys": 1,
+      "sells": 0,
+      "bought": 4631.893715981714,
+      "sold": 0.0,
+      "first_buy_block": 70128783,
+      "first_buy_time": "2026-09-23T01:42:23.000000Z",
+      "buy_rank": 50,
+      "sold_pct": 0.0
+    }
+  ],
+  "top_holders": [
+    {
+      "wallet": "0x267444d099b10fb5ed7c3cc7b7c767adca574952",
+      "balance": 81632653.06122449,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+      "balance": 36144542.1766108,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xd1c77a04b87393e98a1220532e72e8f7d0a31c5a",
+      "balance": 14899041.865762612,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x3200a9f8c14ebc24b9ed7e047ccd3cda0c068de0",
+      "balance": 14607299.627210412,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xebf866fddf3956f933ebb6572238d7b111481ce2",
+      "balance": 14526825.240165345,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xf1644930723b22fbe13b3cbac5f00e35c753961c",
+      "balance": 14469386.961180657,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xcda17e758cfc96600cd5ed6d351ed58542b263e4",
+      "balance": 14369136.308517357,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x0aa1306df82e38911cd5b5520629912ad036e704",
+      "balance": 14360832.145112598,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xee3c8e217259b88a4148617b07f65213ad20641a",
+      "balance": 14319931.862225303,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xdd1b0da0770b9751d336812b7470cb7e5cfaac30",
+      "balance": 14272400.255947417,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x06e52db5d5922c07891bf3a1db751563580b1988",
+      "balance": 14249642.202788213,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x3622d1b3445a3d630760b31e1c5e92d4b67e7170",
+      "balance": 14195404.245544447,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xd39198c0cc7ddf4ca4d43508726da41d8e9bd8da",
+      "balance": 14142221.326554699,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xddb0f205486a84c85d98e11a7f12b9552a09e2f8",
+      "balance": 14120274.287677312,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x114606382972f167f967b091ee0218e521157de9",
+      "balance": 13775930.88716858,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xd80146dbd243e56a4fdabbab4a38b306b9f64211",
+      "balance": 13689851.857643802,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xec32f022c086b451c98bc3c78a46a800ac581c1f",
+      "balance": 13541492.599123985,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x7c50c4d62cabaf4da1d88f504221ad2f46116adf",
+      "balance": 13503275.778195985,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xee8f8bdbefa5bf5708c384a3a3bd3dd507e24c35",
+      "balance": 13471235.454481876,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xf2b16e4c96a8e887f2f8c00bee42bb4af401328e",
+      "balance": 13357617.8243059,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xfa327f245344f077fec280fe247c85660dac3d4b",
+      "balance": 13249013.84852776,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xfdfeab0703bfd72c26858fd964d22e36e86bdf28",
+      "balance": 13107269.506221177,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xf1dabd3e06b6f4db90cdae8d51af899cdbe2dcde",
+      "balance": 12922684.627589276,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0x20903faa1d54954ecf540ea9015bd013e7b3fad0",
+      "balance": 12887449.652928973,
+      "early_rank": null,
+      "sold_pct": null
+    },
+    {
+      "wallet": "0xa2c949f6dab8f2ec884ee81e9f2d71f9c9cd4bc5",
+      "balance": 12885808.472561795,
+      "early_rank": null,
+      "sold_pct": null
+    }
+  ],
+  "profiles": [
+    {
+      "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+      "eth_balance": 5.490636799383511,
+      "other_tokens": [
+        {
+          "symbol": "GLD",
+          "name": "SPDR Gold Shares \u2022 Robinhood Token",
+          "token": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+          "raw": "6253051092527108994"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "405896818"
+        },
+        {
+          "symbol": "GME",
+          "name": "GameStop \u2022 Robinhood Token",
+          "token": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+          "raw": "7820689011354325800"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "721825928902116849"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "138749973386089622"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+          "raw": "145192096119460134512"
+        },
+        {
+          "symbol": "CBBTC",
+          "name": "Coinbase Wrapped BTC",
+          "token": "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+          "raw": "89113"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "raw": "452224236397001882"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "181322151767417154"
+        },
+        {
+          "symbol": "QQQ",
+          "name": "Invesco QQQ \u2022 Robinhood Token",
+          "token": "0xd5f3879160bc7c32ebb4dc785f8a4f505888de68",
+          "raw": "61078170822479728"
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "raw": "4873587515980449477"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "111532449199989453"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "108451075384555487"
+        },
+        {
+          "symbol": "RADIO",
+          "name": "Radio",
+          "token": "0xf0dbd85e85bd6704b00eedb7c2590559ca12b871",
+          "raw": "3061646421966318865159302"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft \u2022 Robinhood Token",
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "raw": "52526219050133230"
+        },
+        {
+          "symbol": "RDDT",
+          "name": "Reddit \u2022 Robinhood Token",
+          "token": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+          "raw": "174138354424805213"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "raw": "34153976923786937"
+        },
+        {
+          "symbol": "SGOV",
+          "name": "iShares 0-3 Month Treasury Bond ETF \u2022 Robinhood Token",
+          "token": "0x92fd66527192e3e61d4ddd13322aa222de86f9b5",
+          "raw": "221536865013567834"
+        },
+        {
+          "symbol": "MUSEBOOK",
+          "name": "musebook",
+          "token": "0x91a2dae9699f0b82540b5886b0d8759c22820ba3",
+          "raw": "87517994249730124851054"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "72018140164062665"
+        },
+        {
+          "symbol": "PLTR",
+          "name": "Palantir Technologies \u2022 Robinhood Token",
+          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+          "raw": "91389667223728656"
+        },
+        {
+          "symbol": "TTWO",
+          "name": "Take-Two Interactive Software \u2022 Robinhood Token",
+          "token": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+          "raw": "78128041901621099"
+        },
+        {
+          "symbol": "SFX",
+          "name": "SAFIX",
+          "token": "0x0a574aae41da077713ba32aa05ca151c8759e2f6",
+          "raw": "15190631334951487280715"
+        },
+        {
+          "symbol": "RBLX",
+          "name": "Roblox \u2022 Robinhood Token",
+          "token": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
+          "raw": "268184401017442906"
+        },
+        {
+          "symbol": "HEDGE",
+          "name": "Hedgehood",
+          "token": "0x3f9108a3beca998c14c6dda822a7e8eaeb88e20d",
+          "raw": "8972853926827877696013"
+        },
+        {
+          "symbol": "IBM",
+          "name": "International Business Machines Corporation \u2022 Robinhood Token",
+          "token": "0x980dcf6766fa79f5cf0c4aadb3ab477ff15a9619",
+          "raw": "35648380757707392"
+        },
+        {
+          "symbol": "AMC",
+          "name": "AMC Entertainment Holdings, Inc. \u2022 Robinhood Token",
+          "token": "0x05a3d1cd21d0c88145e82600e62e7e496e0f222b",
+          "raw": "2838713273114092644"
+        },
+        {
+          "symbol": "NFLX",
+          "name": "Netflix \u2022 Robinhood Token",
+          "token": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+          "raw": "110801376001594791"
+        },
+        {
+          "symbol": "LULU",
+          "name": "Lululemon \u2022 Robinhood Token",
+          "token": "0x4e62068525ab11fe768e29dfd00ef909b9803016",
+          "raw": "74860326608215502"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD \u2022 Robinhood Token",
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "raw": "12647842542776179"
+        }
+      ],
+      "other_token_count": 3649,
+      "stats": {
+        "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+        "buys": 708,
+        "sells": 363,
+        "bought": 6122838.645458698,
+        "sold": 6122491.941727422,
+        "first_buy_block": 68633234,
+        "first_buy_time": "2026-09-21T07:53:59.000000Z",
+        "buy_rank": 1,
+        "sold_pct": 100.0
+      }
+    },
+    {
+      "wallet": "0x6aa80dbbed9ae5ab45fbf61f9644fada3b29326e",
+      "eth_balance": 0.0,
+      "other_tokens": [
+        {
+          "symbol": "ICETEA",
+          "name": "ICE TEA",
+          "token": "0x8d88dd7c21f45443fa06a0c95bab1c7d2dbdcca1",
+          "raw": "98010000000000000000"
+        },
+        {
+          "symbol": "AROS",
+          "name": "American Reserved Oil Supply",
+          "token": "0x7f753dcd45714811b69d0c93b492303608423adc",
+          "raw": "64000000000000000000"
+        },
+        {
+          "symbol": "DOG",
+          "name": "Slim Dog",
+          "token": "0x9a79abc72b54c902d7cebdcc4c8109b873651697",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "musebook",
+          "name": "musebook",
+          "token": "0x2f7b5eadb0f537e32683b0cdfd6c52f9344e5820",
+          "raw": "8"
+        },
+        {
+          "symbol": "MEME",
+          "name": "MEME",
+          "token": "0xc9ec05ed00de82629cdb1d6c3ea5d34f383a5396",
+          "raw": "1"
+        },
+        {
+          "symbol": "SPCSEX",
+          "name": "SPCSEX",
+          "token": "0x366efff7918807c144700cfc4b69bd21e42537f8",
+          "raw": "1"
+        },
+        {
+          "symbol": "ChatGpt",
+          "name": "ChatGpt",
+          "token": "0x7ec1ffe06c5fe6145035af1fdbc1b186792a22e0",
+          "raw": "1"
+        },
+        {
+          "symbol": "PONS",
+          "name": "PONS",
+          "token": "0x91da2b31cc53c829b7bf1907bddd385e261c6a28",
+          "raw": "1"
+        },
+        {
+          "symbol": "0x Settler",
+          "name": "0x Settler",
+          "token": "0x00000000000004533fe15556b1e086bb1a72ceae",
+          "raw": "1"
+        }
+      ],
+      "other_token_count": 9,
+      "stats": {
+        "wallet": "0x6aa80dbbed9ae5ab45fbf61f9644fada3b29326e",
+        "buys": 350,
+        "sells": 22,
+        "bought": 64397760.11390371,
+        "sold": 1010162.4595342347,
+        "first_buy_block": 68633234,
+        "first_buy_time": "2026-09-21T07:53:59.000000Z",
+        "buy_rank": 2,
+        "sold_pct": 1.6
+      }
+    },
+    {
+      "wallet": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+      "eth_balance": 1e-18,
+      "other_tokens": [
+        {
+          "symbol": "CBBTC",
+          "name": "Coinbase Wrapped BTC",
+          "token": "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+          "raw": "1"
+        },
+        {
+          "symbol": "HOODRAT",
+          "name": "Hoodrat",
+          "token": "0x8e62f281f282686fca6dcb39288069a93fc23f1c",
+          "raw": "648122510344273"
+        },
+        {
+          "symbol": "SYRUPUSDG",
+          "name": "syrupUSDG",
+          "token": "0x40858070814a57fdf33a613ae84fe0a8b4a874f7",
+          "raw": "1"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "1"
+        },
+        {
+          "symbol": "ATC",
+          "name": "Atlantis Coin",
+          "token": "0xbfaa6082d6c82e0752a2aa7558746fc5a5daaaaa",
+          "raw": "1"
+        },
+        {
+          "symbol": "NET",
+          "name": "NetNet",
+          "token": "0xca9c78dd337a67f6e0077f65f5e9218719d30edf",
+          "raw": "1"
+        },
+        {
+          "symbol": "NUKE",
+          "name": "NUKE",
+          "token": "0x0000000005aca17e8bd5779fc87e13cb433aed24",
+          "raw": "1"
+        },
+        {
+          "symbol": "USDUC",
+          "name": "Unstable Coin",
+          "token": "0xbbb8ef3181661512ceab66e0b213c29211b24b6c",
+          "raw": "1"
+        },
+        {
+          "symbol": "USDB",
+          "name": "Blockchain USD",
+          "token": "0x65f1f83dd8b702a195e24ea171f8136fb1888888",
+          "raw": "1"
+        },
+        {
+          "symbol": "DOPAMEME",
+          "name": "dopameme",
+          "token": "0x2e8e2dbf58b5f141f9a3d04dba0812b416574e83",
+          "raw": "1"
+        },
+        {
+          "symbol": "WBESC",
+          "name": "Wrapped BESC",
+          "token": "0xa3054f28c48b387d4825be8f3b79ed161abc5405",
+          "raw": "1"
+        },
+        {
+          "symbol": "$LILLY",
+          "name": "LILLY",
+          "token": "0xd51fdf3d83d4c17c802df06040ab51e66a923e95",
+          "raw": "1"
+        },
+        {
+          "symbol": "PVP",
+          "name": "PVP",
+          "token": "0xd23f772ea2b912c98603ca89d189be098eee6abb",
+          "raw": "1"
+        },
+        {
+          "symbol": "JOHN",
+          "name": "Little John",
+          "token": "0xe170dc96ca10103e0d4c5d9293c5a3a72ee365a5",
+          "raw": "1"
+        },
+        {
+          "symbol": "ROBIN",
+          "name": "Robin",
+          "token": "0xfb4729659eef22bfc1c2b680f6f873f8147aaaab",
+          "raw": "1"
+        },
+        {
+          "symbol": "ASTRO",
+          "name": "astronaut",
+          "token": "0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+          "raw": "1"
+        },
+        {
+          "symbol": "LEMON",
+          "name": "Lemon Protocol",
+          "token": "0xb1d46eff0e3d1a4169a4d4159b46c5783b4f7a05",
+          "raw": "1"
+        },
+        {
+          "symbol": "CNPY",
+          "name": "Canopy Finance",
+          "token": "0x532c5583671870723ceef573600208af49c87c54",
+          "raw": "1"
+        },
+        {
+          "symbol": "SHRUB",
+          "name": "Lil' Shrub",
+          "token": "0x5d9144d2d017386519a7134fcc7f1e4ba22f920c",
+          "raw": "1"
+        },
+        {
+          "symbol": "WETH",
+          "name": "WETH",
+          "token": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+          "raw": "1"
+        },
+        {
+          "symbol": "FLETH",
+          "name": "flETH",
+          "token": "0x00000000043c1117dafa3a3d0c7148eb48b30130",
+          "raw": "1"
+        },
+        {
+          "symbol": "WEN",
+          "name": "WEN",
+          "token": "0xf172dc5b774c52432e1e5223cd30f8e8a1096969",
+          "raw": "1"
+        },
+        {
+          "symbol": "SNDK",
+          "name": "Sandisk Corporation \u2022 Robinhood Token",
+          "token": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+          "raw": "1"
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML Holding NV \u2022 Robinhood Token",
+          "token": "0x47f93d52cbec7c6d2cfc080e154002370a60daea",
+          "raw": "1"
+        },
+        {
+          "symbol": "FIX",
+          "name": "Comfort Systems USA, Inc. \u2022 Robinhood Token",
+          "token": "0x93dbb1d2dc5d63f4abacff30485273f538df68ac",
+          "raw": "1"
+        },
+        {
+          "symbol": "MPWR",
+          "name": "Monolithic Power Systems, Inc. \u2022 Robinhood Token",
+          "token": "0x52d50d0280ad1054b43f052bd70a49a212a1b128",
+          "raw": "1"
+        },
+        {
+          "symbol": "LLY",
+          "name": "Eli Lilly \u2022 Robinhood Token",
+          "token": "0x8005d266423c7ea827372c9c864491e5786600ea",
+          "raw": "1"
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology \u2022 Robinhood Token",
+          "token": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+          "raw": "1"
+        },
+        {
+          "symbol": "FICO",
+          "name": "Fair Isaac Corporation \u2022 Robinhood Token",
+          "token": "0xa48f22a46c0f1c46ca7d111cb6c137c271987180",
+          "raw": "1"
+        },
+        {
+          "symbol": "LITE",
+          "name": "Lumentum \u2022 Robinhood Token",
+          "token": "0x8ef20885f94e3d9bc7eb3080279188bd5ed7c08c",
+          "raw": "1"
+        }
+      ],
+      "other_token_count": 83920,
+      "stats": {
+        "wallet": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+        "buys": 117,
+        "sells": 149,
+        "bought": 16204706.916851874,
+        "sold": 43593736.72530667,
+        "first_buy_block": 68634710,
+        "first_buy_time": "2026-09-21T07:56:27.000000Z",
+        "buy_rank": 3,
+        "sold_pct": 269.0
+      }
+    },
+    {
+      "wallet": "0x0005ea38eb0a69d1253508ebdbdb9ea8cb26b5ef",
+      "eth_balance": 0.7420912213927332,
+      "other_tokens": [
+        {
+          "symbol": "WETH",
+          "name": "WETH",
+          "token": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+          "raw": "798166372794580124"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "1700954741"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel \u2022 Robinhood Token",
+          "token": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+          "raw": "4680897429369765219"
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "raw": "45587353849122231907"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft \u2022 Robinhood Token",
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "raw": "345799269516252294"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "438975491387986340"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "132802865979007466"
+        },
+        {
+          "symbol": "BE",
+          "name": "Bloom Energy \u2022 Robinhood Token",
+          "token": "0x822cc93ffd030293e9842c30bbd678f530701867",
+          "raw": "298782694554685286"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "239668338060602605"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "79262792893253072"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "61510569428044222"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "Strategy Inc. \u2022 Robinhood Token",
+          "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+          "raw": "69964212859146127"
+        },
+        {
+          "symbol": "SFX",
+          "name": "SAFIX",
+          "token": "0x0a574aae41da077713ba32aa05ca151c8759e2f6",
+          "raw": "78215004517721028550"
+        },
+        {
+          "symbol": "NU",
+          "name": "Nu \u2022 Robinhood Token",
+          "token": "0x408c14038a04f7bd235329e26d2bf569ee20e250",
+          "raw": "652593027045398"
+        },
+        {
+          "symbol": "GLD",
+          "name": "SPDR Gold Shares \u2022 Robinhood Token",
+          "token": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+          "raw": "12382381486771"
+        },
+        {
+          "symbol": "WOJAK",
+          "name": "Wojak",
+          "token": "0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f",
+          "raw": "973046318068375899"
+        },
+        {
+          "symbol": "HOODIE",
+          "name": "Hoodie",
+          "token": "0xac6aa69489dc51fb002a8ae4096b35cbd9f405ac",
+          "raw": "1500000000000000000"
+        },
+        {
+          "symbol": "DIH",
+          "name": "Dih",
+          "token": "0x0c1ed62d7811e5b437e537ac9d0592469c119c74",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "Euler",
+          "name": "Muse Dog",
+          "token": "0xcf18caf51bc80b2fa185b60f41e127b6dff101ea",
+          "raw": "500000000000000000000000"
+        },
+        {
+          "symbol": "Agrippa",
+          "name": "Agrippa",
+          "token": "0xfb0ae5f67284d8069f45294147d104de08317d12",
+          "raw": "250000000000000000000000"
+        },
+        {
+          "symbol": "PEPE",
+          "name": "PEPE",
+          "token": "0xd02e26f106bab3a93234feeaba74bf314dbd4c75",
+          "raw": "39551160802762815993858"
+        },
+        {
+          "symbol": "MOON",
+          "name": "Half Moon",
+          "token": "0x2a1fd6edd792e990b21c185f6a8afa84bc4e1d82",
+          "raw": "4342737985047669445670"
+        },
+        {
+          "symbol": "AN1",
+          "name": "All in 1",
+          "token": "0x2dcabd142a7f36945df628cb1e8fd2eea3c698c7",
+          "raw": "3415821771183023187730"
+        },
+        {
+          "symbol": "AVNT",
+          "name": "Veranta",
+          "token": "0x3cae51882495b2a2dce68b062e5143245d2b7f5d",
+          "raw": "2026000000000000000000"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Globals Dollars",
+          "token": "0xdb81a12de6c0aebeddf2d85d531dd50cac7366ef",
+          "raw": "317394000000000000000"
+        },
+        {
+          "symbol": "JUGGERNAUT",
+          "name": "The Juggernauts",
+          "token": "0x6b3a8a50f2b7717ba7d0db5298124e16151a9a17",
+          "raw": "242000000000000000000"
+        },
+        {
+          "symbol": "BULL",
+          "name": "The Bull",
+          "token": "0xfd039b27bd83708ba00cc68fcfb8683c83f36644",
+          "raw": "230000000000000000000"
+        },
+        {
+          "symbol": "BYCOCKET",
+          "name": "Bycocket",
+          "token": "0xc8910b25322858e1e15e8d25cebefca75dcc9f2a",
+          "raw": "216000000000000000000"
+        },
+        {
+          "symbol": "STONKHOOD",
+          "name": "STONKHOOD",
+          "token": "0x6d427d98de885f6445dc80a0256e13a1a7a5891d",
+          "raw": "200000000000000000000"
+        },
+        {
+          "symbol": "BATMAN&ROBIN",
+          "name": "Batman And Robin",
+          "token": "0x99090e480f87ba204e0220c710c5f1c7c27a912e",
+          "raw": "198000000000000000000"
+        }
+      ],
+      "other_token_count": 201,
+      "stats": {
+        "wallet": "0x0005ea38eb0a69d1253508ebdbdb9ea8cb26b5ef",
+        "buys": 76,
+        "sells": 170,
+        "bought": 4823247.644376555,
+        "sold": 31214295.815571144,
+        "first_buy_block": 68668322,
+        "first_buy_time": "2026-09-21T08:52:49.000000Z",
+        "buy_rank": 4,
+        "sold_pct": 647.2
+      }
+    },
+    {
+      "wallet": "0x6a02085e2430780c07ff8c45c1b56dfe2352f9b1",
+      "eth_balance": 0.013601183880235136,
+      "other_tokens": [
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "730752627"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+          "raw": "404316401240218067009"
+        },
+        {
+          "symbol": "TENDIES",
+          "name": "TENDIES",
+          "token": "0x45242320dbb855eea8fd36804c6487e10e97fcf9",
+          "raw": "17904082687044342763376"
+        },
+        {
+          "symbol": "JUGGERNAUT",
+          "name": "The Juggernaut",
+          "token": "0xd7321801caae694090694ff55a9323139f043b88",
+          "raw": "25036443418832629102197"
+        },
+        {
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "raw": "1005087133057122428733"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft \u2022 Robinhood Token",
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "raw": "254425189470600061"
+        },
+        {
+          "symbol": "ORCL",
+          "name": "Oracle \u2022 Robinhood Token",
+          "token": "0xb0992820e760d836549ba69bc7598b4af75dee03",
+          "raw": "706697913332309904"
+        },
+        {
+          "symbol": "UP",
+          "name": "up",
+          "token": "0x57c0e45cb534413d1c20a4240955d6bb250bb4f1",
+          "raw": "278860947125901479454"
+        },
+        {
+          "symbol": "AI",
+          "name": "Artificial Inu",
+          "token": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+          "raw": "415307007518021553293"
+        },
+        {
+          "symbol": "POOLS",
+          "name": "pools.trade",
+          "token": "0x385b36ff682ab4c76e7c37a66b96aabc466471d5",
+          "raw": "49755084761275095578297"
+        },
+        {
+          "symbol": "CNPY",
+          "name": "Canopy Finance",
+          "token": "0x532c5583671870723ceef573600208af49c87c54",
+          "raw": "76713523986593"
+        },
+        {
+          "symbol": "AMC",
+          "name": "A Meme Coin",
+          "token": "0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+          "raw": "511085465557298606896"
+        },
+        {
+          "symbol": "PAR",
+          "name": "par",
+          "token": "0x507b6f349a80114097a67b8b4677367acc15b220",
+          "raw": "9434864810889110316290"
+        },
+        {
+          "symbol": "IF",
+          "name": "What IF",
+          "token": "0x232cdfc415d10b673845d83dc02ba2eabe7e30d1",
+          "raw": "20946286812702718426455"
+        },
+        {
+          "symbol": "GRASS",
+          "name": "Touch Grass",
+          "token": "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b",
+          "raw": "5115223700911079379203"
+        },
+        {
+          "symbol": "FLETCHER",
+          "name": "Fletcher by Virtuals",
+          "token": "0x5f18b02b8320ef1c5b7d7a5a8bad482a767f4716",
+          "raw": "154716683767704789154245"
+        },
+        {
+          "symbol": "MOSAIC",
+          "name": "MOSAIC",
+          "token": "0x776650808dda2ae08653dc70cdac45a9ce39e025",
+          "raw": "69432114998007342749111"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "424203333846202"
+        },
+        {
+          "symbol": "MYSTERY",
+          "name": "Mystery",
+          "token": "0xa5bac17a919a10ba0628cda5bcf273681e1a8d4e",
+          "raw": "44256686575249474711293"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "927248753367552"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "561659309627860"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "300797816655035"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "396240755364459"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "raw": "646567594317013"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "raw": "113580593698790"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "174400918718843"
+        },
+        {
+          "symbol": "PLTR",
+          "name": "Palantir Technologies \u2022 Robinhood Token",
+          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+          "raw": "96895654955918"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD \u2022 Robinhood Token",
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "raw": "25711152053865"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel \u2022 Robinhood Token",
+          "token": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+          "raw": "111691683417197"
+        },
+        {
+          "symbol": "BE",
+          "name": "Bloom Energy \u2022 Robinhood Token",
+          "token": "0x822cc93ffd030293e9842c30bbd678f530701867",
+          "raw": "47753409603903"
+        }
+      ],
+      "other_token_count": 125,
+      "stats": {
+        "wallet": "0x6a02085e2430780c07ff8c45c1b56dfe2352f9b1",
+        "buys": 1,
+        "sells": 0,
+        "bought": 35296.96178857567,
+        "sold": 0.0,
+        "first_buy_block": 68670482,
+        "first_buy_time": "2026-09-21T08:56:26.000000Z",
+        "buy_rank": 5,
+        "sold_pct": 0.0
+      }
+    },
+    {
+      "wallet": "0x09ad820aac5779683b481c4674208a4e1b024afa",
+      "eth_balance": 0.0,
+      "other_tokens": [
+        {
+          "symbol": "ARC",
+          "name": "ARCCoin",
+          "token": "0xdad7e20952787599f3054d617fa11c224846ac70",
+          "raw": "7210500000000000000000000"
+        },
+        {
+          "symbol": "JOOBI",
+          "name": "JOOBI",
+          "token": "0x1e7344a496661984271b35f0336bdb25ef407789",
+          "raw": "99846536696558786707456"
+        },
+        {
+          "symbol": "CME",
+          "name": "Commodity Market Exchange",
+          "token": "0xbf3f2263b93513fe468ac1a1e0d6a7baba9ceac7",
+          "raw": "15280762771387967340544"
+        },
+        {
+          "symbol": "FUCK",
+          "name": "FUCK",
+          "token": "0xc5db6a14e66458d83b0f577cd6664a6a1caf4ba8",
+          "raw": "4200000000000000000000"
+        },
+        {
+          "symbol": "PONK",
+          "name": "PONK",
+          "token": "0x4b5230a105fd921edeebf5c1daae4158aa1c126b",
+          "raw": "2171710525917760061440"
+        },
+        {
+          "symbol": "AVNT",
+          "name": "Veranta",
+          "token": "0x3cae51882495b2a2dce68b062e5143245d2b7f5d",
+          "raw": "2026000000000000000000"
+        },
+        {
+          "symbol": "RWA",
+          "name": "Real World Asses",
+          "token": "0xd6b224dc0f0c7f8430f6ad01e25df63d2499d83b",
+          "raw": "1532421000000000000000"
+        },
+        {
+          "symbol": "JINQIAN",
+          "name": "Money Mushroom",
+          "token": "0xaf6a8b4e042e55abf32629f60e305510f1316dbd",
+          "raw": "1489025318236641427456"
+        },
+        {
+          "symbol": "BUDDY",
+          "name": "Buddy The Unicorn",
+          "token": "0xfff58316e08a79ddc782bb030c82521a55c1f448",
+          "raw": "541057641536055246848"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0x1076f47f9632d726cf0ff93ad1616c45cbb8b94d",
+          "raw": "435490068656492969984"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0x95d9fd01537d3724e57c54a710863e6124e65e70",
+          "raw": "202226448225737277440"
+        },
+        {
+          "symbol": "dogedoge",
+          "name": "dogedoge",
+          "token": "0x6ca55a9668d6737488381146b3a0ed99c6c03326",
+          "raw": "67155000000000000000"
+        },
+        {
+          "symbol": "AROS",
+          "name": "American Reserved Oil Supply",
+          "token": "0x7f753dcd45714811b69d0c93b492303608423adc",
+          "raw": "48000000000000000000"
+        },
+        {
+          "symbol": "BISCOTTI",
+          "name": "Biscotti",
+          "token": "0xdc66c287b762da09a542a86ad133671b56bdb238",
+          "raw": "36000000000000000000"
+        },
+        {
+          "symbol": "INVIDIA",
+          "name": "Invidia",
+          "token": "0x53e3b40766551445313b15d007f548dfbba805e1",
+          "raw": "15478111144505104384"
+        },
+        {
+          "symbol": "VAULT",
+          "name": "PonsVault",
+          "token": "0x736322c355b926a4d9d9d0ab1e802b4174c0f3b6",
+          "raw": "10000000000000000000"
+        },
+        {
+          "symbol": "RightsLayer",
+          "name": "RightsLayer",
+          "token": "0x792c8d8af7c9cd9c14ec4c2044925d1f03dc9da8",
+          "raw": "9000000000000000000"
+        },
+        {
+          "symbol": "DOG",
+          "name": "Slim Dog",
+          "token": "0x9a79abc72b54c902d7cebdcc4c8109b873651697",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "MEME",
+          "name": "MEME",
+          "token": "0xc9ec05ed00de82629cdb1d6c3ea5d34f383a5396",
+          "raw": "1"
+        },
+        {
+          "symbol": "MM",
+          "name": "Market Maker",
+          "token": "0xa6fa16a2257d5cf8755216311837955904fd8271",
+          "raw": "1"
+        }
+      ],
+      "other_token_count": 20,
+      "stats": {
+        "wallet": "0x09ad820aac5779683b481c4674208a4e1b024afa",
+        "buys": 3,
+        "sells": 1,
+        "bought": 201732.84865755445,
+        "sold": 6719.753990263562,
+        "first_buy_block": 68681518,
+        "first_buy_time": "2026-09-21T09:14:59.000000Z",
+        "buy_rank": 6,
+        "sold_pct": 3.3
+      }
+    },
+    {
+      "wallet": "0x18ce40bf88e38ffe57201dade3cc88a415c2dbcf",
+      "eth_balance": 0.15493608795238864,
+      "other_tokens": [
+        {
+          "symbol": "HOTDOG",
+          "name": "hotdog",
+          "token": "0x1c1daef0300551adbfbe403e7d567b6c5aff566f",
+          "raw": "1795613582310573745382084"
+        },
+        {
+          "symbol": "GME",
+          "name": "Greatest Meme Ever",
+          "token": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6",
+          "raw": "1549040400029889393460270"
+        },
+        {
+          "symbol": "KITSU",
+          "name": "Kitsu",
+          "token": "0x8d4dfaaa4198b6486e0293fec914c2b6a821d4dc",
+          "raw": "1314965917511313214508694"
+        },
+        {
+          "symbol": "HEDGE",
+          "name": "Hedgehood",
+          "token": "0x3f9108a3beca998c14c6dda822a7e8eaeb88e20d",
+          "raw": "1332715617337322505665645"
+        },
+        {
+          "symbol": "MAGATARD",
+          "name": "Magatard",
+          "token": "0xb51d57cbe67152fd163f59d1e0f950c6b647fb07",
+          "raw": "14362312304512896446088456"
+        },
+        {
+          "symbol": "WRESTLER",
+          "name": "Wrestler",
+          "token": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+          "raw": "1108695692755826979813869"
+        },
+        {
+          "symbol": "GG",
+          "name": "Golden Goose",
+          "token": "0xcacb0e9caccee63ec4d82952e561a291c68bcb68",
+          "raw": "1104586714693727348006216"
+        },
+        {
+          "symbol": "WISHBONE",
+          "name": "WISHBONE",
+          "token": "0x77581054581b9c525e7dd7a0155de43867532d03",
+          "raw": "1427780232093857669071281"
+        },
+        {
+          "symbol": "DOGGO",
+          "name": "Dancing Dog",
+          "token": "0xba527c23903eff094a987197ccd643f2da76e4ff",
+          "raw": "1844669491683004807098033"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "372560527957781714"
+        },
+        {
+          "symbol": "MONEYDOG",
+          "name": "Money Dog",
+          "token": "0x8d8f709357203b4933af3ac410cc521c5680611f",
+          "raw": "1118189122357554345778212"
+        },
+        {
+          "symbol": "BLACKROCK",
+          "name": "BLACKROCK",
+          "token": "0x9de83d01bc3d0857435529d931679ba5dc31ddf4",
+          "raw": "2148350965524123540880129"
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Dog",
+          "token": "0x1c2a482970ae6b6e5052a7a184c8aef19e0840be",
+          "raw": "10571953089039059242421220"
+        },
+        {
+          "symbol": "BITCOIN",
+          "name": "AuraSaylorFortniteYoda67Inu",
+          "token": "0x1dd500201ffabc04089aa1313b0a6aba668ca178",
+          "raw": "3305784267359872593675109"
+        },
+        {
+          "symbol": "RIDE",
+          "name": "RHIVIAN",
+          "token": "0x8b3e3ba1a55b939f93f0a205f94520b9468e17f8",
+          "raw": "8076142775349180672917292"
+        },
+        {
+          "symbol": "DINO",
+          "name": "Chrome Dino",
+          "token": "0x000b2164a76560323163343431db8be550f164b8",
+          "raw": "2780102736828296656672686"
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco \u2022 Robinhood Token",
+          "token": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+          "raw": "76622753925523650"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "274468660754258110"
+        },
+        {
+          "symbol": "GME",
+          "name": "GameStop \u2022 Robinhood Token",
+          "token": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+          "raw": "2355195823666271473"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "158104249239636654"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD \u2022 Robinhood Token",
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "raw": "79754756060678609"
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "raw": "5141714708615840446"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "63650873752428686"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "raw": "138996938634984174"
+        },
+        {
+          "symbol": "SLV",
+          "name": "iShares Silver Trust \u2022 Robinhood Token",
+          "token": "0x411efb0e7f985935daec3d4c3ebaea0d0ad7d89f",
+          "raw": "290450005477392814"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "14631404"
+        },
+        {
+          "symbol": "NET",
+          "name": "Cloudflare, Inc. \u2022 Robinhood Token",
+          "token": "0x116f00968269b7bfbad4109ce591d6e74c0601d4",
+          "raw": "40772393624142681"
+        },
+        {
+          "symbol": "GLD",
+          "name": "SPDR Gold Shares \u2022 Robinhood Token",
+          "token": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+          "raw": "30430322352675122"
+        },
+        {
+          "symbol": "RBLX",
+          "name": "Roblox \u2022 Robinhood Token",
+          "token": "0xf0c4bf4c582cb3836e98394b1d4e7b7281101be8",
+          "raw": "144184159008004828"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "15164574426275825"
+        }
+      ],
+      "other_token_count": 203,
+      "stats": {
+        "wallet": "0x18ce40bf88e38ffe57201dade3cc88a415c2dbcf",
+        "buys": 12,
+        "sells": 0,
+        "bought": 243489.93110382967,
+        "sold": 0.0,
+        "first_buy_block": 68694710,
+        "first_buy_time": "2026-09-21T09:37:08.000000Z",
+        "buy_rank": 7,
+        "sold_pct": 0.0
+      }
+    },
+    {
+      "wallet": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+      "eth_balance": 0.19811153664663655,
+      "other_tokens": [
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "105039015"
+        },
+        {
+          "symbol": "WETH",
+          "name": "WETH",
+          "token": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+          "raw": "37152657538072612"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+          "raw": "552127781217890386"
+        },
+        {
+          "symbol": "FIRE",
+          "name": "FIRE",
+          "token": "0x43eea882b845a8493152ebc55cf30ae9281b02d5",
+          "raw": "4000000000000000000"
+        },
+        {
+          "symbol": "WOJAK",
+          "name": "Wojak",
+          "token": "0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f",
+          "raw": "497714693296551894"
+        },
+        {
+          "symbol": "MARCO",
+          "name": "MELEGA",
+          "token": "0x803925daceccc32343cdac0c731db07a1a384bfb",
+          "raw": "4633103170000000000"
+        },
+        {
+          "symbol": "DIH",
+          "name": "Dih",
+          "token": "0x0c1ed62d7811e5b437e537ac9d0592469c119c74",
+          "raw": "2000000000000000000"
+        },
+        {
+          "symbol": "GME",
+          "name": "GameStop \u2022 Robinhood Token",
+          "token": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+          "raw": "1275354144023"
+        },
+        {
+          "symbol": "USO",
+          "name": "United States Oil Fund \u2022 Robinhood Token",
+          "token": "0xa30fa36db767ad9ed3f7a60fc79526fb4d56d344",
+          "raw": "34507247724"
+        },
+        {
+          "symbol": "GLD",
+          "name": "SPDR Gold Shares \u2022 Robinhood Token",
+          "token": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+          "raw": "12215500747"
+        },
+        {
+          "symbol": "AMC",
+          "name": "AMC Entertainment Holdings, Inc. \u2022 Robinhood Token",
+          "token": "0x05a3d1cd21d0c88145e82600e62e7e496e0f222b",
+          "raw": "1035384484640"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "5835121888"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "8175887071"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "Strategy Inc. \u2022 Robinhood Token",
+          "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+          "raw": "6246703240"
+        },
+        {
+          "symbol": "LARUTAN",
+          "name": "LARUTAN PENYEGAR",
+          "token": "0x5966e68fe699fd6a405f8582c2c00f2845f251b1",
+          "raw": "5000000000000000000000000"
+        },
+        {
+          "symbol": "Euler",
+          "name": "Muse Dog",
+          "token": "0xcf18caf51bc80b2fa185b60f41e127b6dff101ea",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "Agrippa",
+          "name": "Agrippa",
+          "token": "0xfb0ae5f67284d8069f45294147d104de08317d12",
+          "raw": "500000000000000000000000"
+        },
+        {
+          "symbol": "GenAI",
+          "name": "Generative Artificial Intelligence",
+          "token": "0xee8febba3ac74ed568d3e30ac6b1e1d7bbaac471",
+          "raw": "200000000000000000000000"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x62229f3ca0a51d2396dedb6b54ea6789cbbc02b0",
+          "raw": "100000000000000000000000"
+        },
+        {
+          "symbol": "YAPPER",
+          "name": "Robinhood Yapper",
+          "token": "0x3ed06ed314d25107add09a8c9c99c9b1145a1003",
+          "raw": "25000000000000000000000"
+        },
+        {
+          "symbol": "HOODLER",
+          "name": "HOODLER",
+          "token": "0xc66906ffe2047e70c50391e8d8fefd6e417e7ad8",
+          "raw": "10000000000000000000000"
+        },
+        {
+          "symbol": "VLAD",
+          "name": "Vladhood",
+          "token": "0x37c276c9d1c5361c62c7ac22ba3b2067e9c2eaa5",
+          "raw": "2210000000000000000000"
+        },
+        {
+          "symbol": "PIPECAT",
+          "name": "pipecat",
+          "token": "0x2b579f1440ebe37bee0f282ead15fd09e6bb38e2",
+          "raw": "2100000000000000000000"
+        },
+        {
+          "symbol": "AVNT",
+          "name": "Veranta",
+          "token": "0x3cae51882495b2a2dce68b062e5143245d2b7f5d",
+          "raw": "2026000000000000000000"
+        },
+        {
+          "symbol": "YOLO",
+          "name": "YOLO",
+          "token": "0x9c3ff7ba065ea2fc5a2630b700946c5c74d1e716",
+          "raw": "1500000000000000000000"
+        },
+        {
+          "symbol": "OZZY",
+          "name": "The Pon Dog",
+          "token": "0xae034ad76a5fb4ef7c7a052bb16e3efc97b7429b",
+          "raw": "1325000000000000000000"
+        },
+        {
+          "symbol": "JUGGERNAUT",
+          "name": "The Juggernauts",
+          "token": "0x6b3a8a50f2b7717ba7d0db5298124e16151a9a17",
+          "raw": "1078000000000000000000"
+        },
+        {
+          "symbol": "BATMAN&ROBIN",
+          "name": "Batman And Robin",
+          "token": "0x99090e480f87ba204e0220c710c5f1c7c27a912e",
+          "raw": "1000000000000000000000"
+        },
+        {
+          "symbol": "ASCII",
+          "name": "ASCIIBLAST",
+          "token": "0xa3477b7a246b9b3a2df37fb38e1ab64f043ef947",
+          "raw": "1000000000000000000000"
+        },
+        {
+          "symbol": "MCANNON",
+          "name": "MEMECANNON",
+          "token": "0x9ef64b0cc10dbb4e2a5ab01408d4ffd6a2cfa323",
+          "raw": "1000000000000000000000"
+        }
+      ],
+      "other_token_count": 488,
+      "stats": {
+        "wallet": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+        "buys": 8,
+        "sells": 0,
+        "bought": 1116248.6689680424,
+        "sold": 0.0,
+        "first_buy_block": 68723527,
+        "first_buy_time": "2026-09-21T10:25:23.000000Z",
+        "buy_rank": 8,
+        "sold_pct": 0.0
+      }
+    },
+    {
+      "wallet": "0x6ad7b44448fb5f3a7433400bb3dc0d28db782fe1",
+      "eth_balance": 0.9601303645551829,
+      "other_tokens": [
+        {
+          "symbol": "GRASS",
+          "name": "Touch Grass",
+          "token": "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b",
+          "raw": "83887855663874977935559"
+        },
+        {
+          "symbol": "WORTH",
+          "name": "one life, its worth an attempt",
+          "token": "0xfb1bcb6817f7b8fa86896d3253b16aeb7bd6a5a8",
+          "raw": "44546760659337123443878"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "255742371261604488"
+        },
+        {
+          "symbol": "CATSTR",
+          "name": "Cashcat Strategy",
+          "token": "0xa3bfbccd4aeec8ac56b17fee3e02dd2c60722ccc",
+          "raw": "554659813802663702742455"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "35350609014961577"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "raw": "52711350136557092"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "Strategy Inc. \u2022 Robinhood Token",
+          "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+          "raw": "25848780798622245"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+          "raw": "5425209252519238716"
+        },
+        {
+          "symbol": "GME",
+          "name": "GameStop \u2022 Robinhood Token",
+          "token": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
+          "raw": "123293770074036980"
+        },
+        {
+          "symbol": "SNDK",
+          "name": "Sandisk Corporation \u2022 Robinhood Token",
+          "token": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+          "raw": "1006455812101171"
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "raw": "184337240033755236"
+        },
+        {
+          "symbol": "BB",
+          "name": "BlackBerry Limited \u2022 Robinhood Token",
+          "token": "0x48e39e56acdba37b09020c0b734a613c9a2f100a",
+          "raw": "157975970181590924"
+        },
+        {
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "raw": "4527976074881961385"
+        },
+        {
+          "symbol": "RDDT",
+          "name": "Reddit \u2022 Robinhood Token",
+          "token": "0x05b37fb53a299a1b874a619e1c4c404d52c36f4c",
+          "raw": "4514742320757340"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "1372822247508492"
+        },
+        {
+          "symbol": "PHOOD3X",
+          "name": "Arcus HOOD (3x Long)",
+          "token": "0xe24cabdf76dd1c2576049167eb1755c84b985c36",
+          "raw": "1990709234579907"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "431822938981483"
+        },
+        {
+          "symbol": "PBTC3X",
+          "name": "Arcus BTC (3x Long)",
+          "token": "0x4472c69d299382f8847ebce4fc6ed8e295510e3e",
+          "raw": "1555515928265536"
+        },
+        {
+          "symbol": "PBTC",
+          "name": "Arcus BTC (1x Long)",
+          "token": "0x925f92f055edb79c42b5d45e64a1b74143b90ea0",
+          "raw": "2692283047729694"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "217531"
+        },
+        {
+          "symbol": "HIMS",
+          "name": "Hims & Hers Health, Inc. \u2022 Robinhood Token",
+          "token": "0xccee82fe024c36fa15e1005ede3e9e4787e23d09",
+          "raw": "4022053536470706"
+        },
+        {
+          "symbol": "NFLX",
+          "name": "Netflix \u2022 Robinhood Token",
+          "token": "0xe0444ef8bf4ed74f74fd73686e2ddf4c1c5591e8",
+          "raw": "1127009285798218"
+        },
+        {
+          "symbol": "LLY",
+          "name": "Eli Lilly \u2022 Robinhood Token",
+          "token": "0x8005d266423c7ea827372c9c864491e5786600ea",
+          "raw": "28923857934733"
+        },
+        {
+          "symbol": "PCC",
+          "name": "Pussy Cat Club",
+          "token": "0xbf3e53713a53e9c3d5d1ddc25dd2c65669244663",
+          "raw": "1156472000000000000"
+        },
+        {
+          "symbol": "TENDIES",
+          "name": "TENDIES",
+          "token": "0x45242320dbb855eea8fd36804c6487e10e97fcf9",
+          "raw": "105385677746113309"
+        },
+        {
+          "symbol": "PIXELCAT",
+          "name": "Robinhood Pixel Cat",
+          "token": "0x89314dd83f307d7d9bc19ff261888027fa531658",
+          "raw": "29258411338840533"
+        },
+        {
+          "symbol": "HM",
+          "name": "Hood Morning",
+          "token": "0x5788116f4fe1820bf499c26fc7203630bf2d020f",
+          "raw": "5516403125"
+        },
+        {
+          "symbol": "MYTHOS",
+          "name": "mythOS",
+          "token": "0x29efce55383de9ca3c2496b7b0f7c6b5381f6a2a",
+          "raw": "562664904732546211563240"
+        },
+        {
+          "symbol": "FLYBRAIN",
+          "name": "flybrain",
+          "token": "0xcc581f6824ff74fdf2d69d5c06a85bb1d6e00d59",
+          "raw": "185264657973854169202688"
+        },
+        {
+          "symbol": "IMPS",
+          "name": "Impulse",
+          "token": "0x404f8d6168ad19b1a7fcb15bf8d271cd4389ecb0",
+          "raw": "128763991655472103453474"
+        }
+      ],
+      "other_token_count": 60,
+      "stats": {
+        "wallet": "0x6ad7b44448fb5f3a7433400bb3dc0d28db782fe1",
+        "buys": 1,
+        "sells": 0,
+        "bought": 35866.77530651988,
+        "sold": 0.0,
+        "first_buy_block": 68824250,
+        "first_buy_time": "2026-09-21T13:14:14.000000Z",
+        "buy_rank": 9,
+        "sold_pct": 0.0
+      }
+    },
+    {
+      "wallet": "0xc8e2d50972d3a9195f5bf7ffcc7cf6c14726e9b9",
+      "eth_balance": 0.000518014499381201,
+      "other_tokens": [
+        {
+          "symbol": "NOFAL",
+          "name": "Nova Falcon",
+          "token": "0x8e5e567bf1e72db34a88fd32453e33fb8bd8cbb8",
+          "raw": "1000000000000000000000"
+        },
+        {
+          "symbol": "NUCLEAR",
+          "name": "Nuclear Renaissance\u200b\u2060",
+          "token": "0x534b0b770583acb2761d475b9300d5a2976c56f5",
+          "raw": "632519610000000000000"
+        },
+        {
+          "symbol": "WAB",
+          "name": "WE ARE BACK",
+          "token": "0x4d8db0a3906a6fb2a3e2ea693016ea522383344d",
+          "raw": "623135440000000000000"
+        },
+        {
+          "symbol": "ARBN",
+          "name": "Arbitrum Nova",
+          "token": "0x0b7a176cd23b658dc436e3733f00c977c3a0cc5a",
+          "raw": "618165480000000000000"
+        },
+        {
+          "symbol": "HOLDER",
+          "name": "Holder",
+          "token": "0xb6f44270e1107c3c9377a34de4dfac5a8f3cb78d",
+          "raw": "578986980000000000000"
+        },
+        {
+          "symbol": "Gary",
+          "name": "Gary The Snail",
+          "token": "0x722fd597247502eb98152217bf017ead80ba10d9",
+          "raw": "561132400000000000000"
+        }
+      ],
+      "other_token_count": 6,
+      "stats": {
+        "wallet": "0xc8e2d50972d3a9195f5bf7ffcc7cf6c14726e9b9",
+        "buys": 2,
+        "sells": 1,
+        "bought": 129344.58307614482,
+        "sold": 3571431.005142527,
+        "first_buy_block": 68916161,
+        "first_buy_time": "2026-09-21T15:47:46.000000Z",
+        "buy_rank": 10,
+        "sold_pct": 2761.2
+      }
+    },
+    {
+      "wallet": "0x5577993f1967c439cafe1f97dfb447767653d283",
+      "eth_balance": 8.8329544176208e-05,
+      "other_tokens": [
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "1"
+        },
+        {
+          "symbol": "GenAI",
+          "name": "Generative Artificial Intelligence",
+          "token": "0xee8febba3ac74ed568d3e30ac6b1e1d7bbaac471",
+          "raw": "200000000000000000000000"
+        },
+        {
+          "symbol": "Fireeyes",
+          "name": "Fireeyes DAO",
+          "token": "0x4bcbd49a1e22ac8f1fe80ab40e49039a43973840",
+          "raw": "137480808576913041379929"
+        },
+        {
+          "symbol": "JEANPHIL",
+          "name": "Next Trump",
+          "token": "0x5ac0b9b6d6875c0f4304ca4ca2812851e6eb3a81",
+          "raw": "1723440820156832153600"
+        },
+        {
+          "symbol": "COPCAT",
+          "name": "Copper Cat",
+          "token": "0x3c836dc04dcc81d0753a417bc69bfc4deca2aa5d",
+          "raw": "1688323535070087872512"
+        },
+        {
+          "symbol": "Nautilo",
+          "name": "Nautilo",
+          "token": "0x3b401114112479aff47874b155454827a131faad",
+          "raw": "1151343407017355247616"
+        },
+        {
+          "symbol": "HEIR",
+          "name": "Heirloom",
+          "token": "0x0d0ab8fd1f3ac5c6a6bd83814685be5a2b63e506",
+          "raw": "758694704409962872832"
+        },
+        {
+          "symbol": "DEPORTATIONMA",
+          "name": "DEPORTATIONMAXXING\u200b\u2060",
+          "token": "0xe65091f720b903b724bb2d375acd1f17526c38d0",
+          "raw": "631489763000000000000"
+        },
+        {
+          "symbol": "sing",
+          "name": "sing",
+          "token": "0x652f3ddbf9f7db846e80ea3a30211554c04555e9",
+          "raw": "561453470000000000000"
+        },
+        {
+          "symbol": "Ajizzle",
+          "name": "Caught in A Jizzle",
+          "token": "0x9f6f9fce431d91c02856641fdda5172ed54c2b69",
+          "raw": "513465891000000000000"
+        },
+        {
+          "symbol": "CATE",
+          "name": "Catecoin",
+          "token": "0xebcef0e21794001a373f2dba1b29f310418f9796",
+          "raw": "486228810266616397824"
+        },
+        {
+          "symbol": "matrisem",
+          "name": "matrisem",
+          "token": "0x67804f55439458b776192b3755c9150ac64c92ac",
+          "raw": "453534300000000000000"
+        },
+        {
+          "symbol": "INU",
+          "name": "iNu",
+          "token": "0xce88d8b90c9f37f3f273e8a752f96aeeba6ec40f",
+          "raw": "345164265150967382016"
+        },
+        {
+          "symbol": "BabyBull",
+          "name": "Baby Bull ANSEM",
+          "token": "0x08479b235d4db4738b7cd24648bd999375c0db5c",
+          "raw": "222174097042148261888"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x9909c4e8cae5ada810c7297943ae767f87d00a3e",
+          "raw": "104000000000000000000"
+        },
+        {
+          "symbol": "CHUMP",
+          "name": "Chump Coin",
+          "token": "0x56c3f78e231c13004d7a7136d9da545126fb63ee",
+          "raw": "102149158366309072896"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x9d67b510d79cf9ed0f2dec2d10039daed90157f4",
+          "raw": "12000000000000000000"
+        }
+      ],
+      "other_token_count": 17,
+      "stats": {
+        "wallet": "0x5577993f1967c439cafe1f97dfb447767653d283",
+        "buys": 1,
+        "sells": 1,
+        "bought": 1951.8661797204616,
+        "sold": 3095.873387895834,
+        "first_buy_block": 68961990,
+        "first_buy_time": "2026-09-21T17:04:07.000000Z",
+        "buy_rank": 11,
+        "sold_pct": 158.6
+      }
+    },
+    {
+      "wallet": "0x095fe61e8741d39e14bf0f78f7034db81f2b91c6",
+      "eth_balance": 1.8467447210849437,
+      "other_tokens": [
+        {
+          "symbol": "NILF",
+          "name": "Not In Labor Force",
+          "token": "0xdb97b2aefd6816485a757ae49280d598a5c9c848",
+          "raw": "4322040914225008757116387"
+        },
+        {
+          "symbol": "YOLO",
+          "name": "YOLO",
+          "token": "0x62c71cd34a52c30d894419cbcc55db2afa8032ea",
+          "raw": "1187274104680757169663460"
+        },
+        {
+          "symbol": "MUMU",
+          "name": "Mumu The Bull",
+          "token": "0x8ec17c059f250a5c19566c3fc56ee13a343dd283",
+          "raw": "3122037616923576683296396"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "161966961648359546"
+        },
+        {
+          "symbol": "WOJAK",
+          "name": "Wojak",
+          "token": "0xace55fe98bab14366dd49ab5aa5df76aa11a3c6f",
+          "raw": "21878511685876908708791"
+        },
+        {
+          "symbol": "SLINK",
+          "name": "Shivolink",
+          "token": "0xfa89ed9d12bf74add8253ddfaa426c4d8a0fa603",
+          "raw": "123054929781225652170444"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollar",
+          "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
+          "raw": "3192033"
+        },
+        {
+          "symbol": "LEGS",
+          "name": "legs.fun",
+          "token": "0x8fcf98e1348d3ddee46cdd15a5c7d9a8d423077d",
+          "raw": "59395917003264701128184"
+        },
+        {
+          "symbol": "RAREFRIENDS",
+          "name": "RareFriends",
+          "token": "0x0779369854d3ecdea927206718ffd7730c67b71f",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "LIFE",
+          "name": "Life is a game",
+          "token": "0xac0aebf8a26e46ded45e348a8a69b61b282f1e18",
+          "raw": "11063215524772154889301652"
+        },
+        {
+          "symbol": "qHOG-3211",
+          "name": "Hedgehog Fund #3211",
+          "token": "0xca3778a3cd4ff610153b6f35555a3f6960d865d4",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3213",
+          "name": "Hedgehog Fund #3213",
+          "token": "0xc6c5b1338bbb02c952f2aba11c464ffcaa2bd4e4",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3216",
+          "name": "Hedgehog Fund #3216",
+          "token": "0xb00c56979ce0bcccbdbc324a7e504e1a09f93518",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3217",
+          "name": "Hedgehog Fund #3217",
+          "token": "0x9665493ff220f11e44849445428147407bfdce77",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3212",
+          "name": "Hedgehog Fund #3212",
+          "token": "0x27613756614143be41ed38260fd619295fce3ba4",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3209",
+          "name": "Hedgehog Fund #3209",
+          "token": "0xe97c75d81790c9cbe24dc29e4a92a7a20aa1e6a1",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3210",
+          "name": "Hedgehog Fund #3210",
+          "token": "0xdd887e2469fb4bf751a402dee184f5041b1582b7",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3195",
+          "name": "Hedgehog Fund #3195",
+          "token": "0xa68efd1f859817735d98b9cc4cdfbc64c012cea0",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3194",
+          "name": "Hedgehog Fund #3194",
+          "token": "0x482e6c0b1597467762050568ecd8c0f975d44428",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3193",
+          "name": "Hedgehog Fund #3193",
+          "token": "0x1e2897c6946c96b22f448f49bb66c7facde71fda",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3192",
+          "name": "Hedgehog Fund #3192",
+          "token": "0x1838bf600424ac71488785854b795906b01c4ff4",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3174",
+          "name": "Hedgehog Fund #3174",
+          "token": "0x71c053f646462ed14b6a00ee6574e4359862c6bc",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3175",
+          "name": "Hedgehog Fund #3175",
+          "token": "0x4547c5cd6c0ff570170222780a5d05cd6f20083f",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3178",
+          "name": "Hedgehog Fund #3178",
+          "token": "0x3f14457c8cf45d3c2bd101ed1ea0f138c9ab4088",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3168",
+          "name": "Hedgehog Fund #3168",
+          "token": "0xca4a16e1c61c0eba83be149702943c19ce60f952",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3171",
+          "name": "Hedgehog Fund #3171",
+          "token": "0x6f2a4477d70bc8cfd593de8cd321a6f5be8e38a4",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3170",
+          "name": "Hedgehog Fund #3170",
+          "token": "0x383d85393ba089c46e2c340b45e562be78bbc63d",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3169",
+          "name": "Hedgehog Fund #3169",
+          "token": "0x11389a1aa9a41492c58e71ff7a06547817a9b569",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3143",
+          "name": "Hedgehog Fund #3143",
+          "token": "0xb61834626994f26bc9ed9e5d63ed325e53bee429",
+          "raw": "1000000000000000000000000"
+        },
+        {
+          "symbol": "qHOG-3142",
+          "name": "Hedgehog Fund #3142",
+          "token": "0x71bc771f903f824487bcfedc1832ff097b87f70e",
+          "raw": "1000000000000000000000000"
+        }
+      ],
+      "other_token_count": 98,
+      "stats": {
+        "wallet": "0x095fe61e8741d39e14bf0f78f7034db81f2b91c6",
+        "buys": 8,
+        "sells": 2,
+        "bought": 2398530.17519691,
+        "sold": 880247.9295505917,
+        "first_buy_block": 68994611,
+        "first_buy_time": "2026-09-21T17:58:37.000000Z",
+        "buy_rank": 12,
+        "sold_pct": 36.7
+      }
+    },
+    {
+      "wallet": "0x4dc18b5246eb80000afac62b8617501d2976ef20",
+      "eth_balance": 0.4483046874408529,
+      "other_tokens": [
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "4784305412409691"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "raw": "1467147793607305"
+        },
+        {
+          "symbol": "\ud83e\udeb6",
+          "name": "\ud83e\udeb6 (Feather)",
+          "token": "0xa870f8c7cae9705194a141b0c2964b6c79ee3742",
+          "raw": "6900000000000000000"
+        },
+        {
+          "symbol": "Agrippa",
+          "name": "Agrippa",
+          "token": "0xbe8e930b3a179c50040146e1d9c63aa225985a72",
+          "raw": "220043260265576435548160"
+        },
+        {
+          "symbol": "CME",
+          "name": "Commodity Market Exchange",
+          "token": "0xbb1d28080d7d9addb7c1d62cd5932e9ac5d07495",
+          "raw": "118049036493963462180864"
+        },
+        {
+          "symbol": "wildebeest",
+          "name": "wildebeest",
+          "token": "0xb138faebcbb9ebfd9e189a457a59c2ee42426461",
+          "raw": "93480654850159886204928"
+        },
+        {
+          "symbol": "musebook",
+          "name": "musebook",
+          "token": "0x73faa4f2f36bb48489e4250efaf0932db0833832",
+          "raw": "52235627068876528812032"
+        },
+        {
+          "symbol": "\u5bcc\u8d35",
+          "name": "\u5bcc\u8d35",
+          "token": "0x18e92790d739cf2f3cd62303d148b696e6a515e6",
+          "raw": "46514991908113759600640"
+        },
+        {
+          "symbol": "FLYBRAIN",
+          "name": "flybrain",
+          "token": "0xe27183b30d0cfbc002675b02984bef27d0f481e1",
+          "raw": "41286246632627642564608"
+        },
+        {
+          "symbol": "CATE",
+          "name": "Catecoin",
+          "token": "0x43ccf3807b50c0353255b0c7f460cc7423f6c804",
+          "raw": "32826948600375434805248"
+        },
+        {
+          "symbol": "CME",
+          "name": "Commodity Market Exchange",
+          "token": "0xa3a2e656a9cb41aea77550c8e7ec808268922cdc",
+          "raw": "29110947908179992772608"
+        },
+        {
+          "symbol": "ZZZ",
+          "name": "ZZZ",
+          "token": "0x4c2c5165fdb8acb8176e3f5778f8de740c18d506",
+          "raw": "24548971383978327015424"
+        },
+        {
+          "symbol": "CATGPT",
+          "name": "CATGPT",
+          "token": "0x6d95399619673d0a667482b7adec2bf55f1025f5",
+          "raw": "11102843517490650152960"
+        },
+        {
+          "symbol": "musebook",
+          "name": "musebook",
+          "token": "0xa2960cd584251fec1365304a4336e2295ef6a9c7",
+          "raw": "5864462053888179044352"
+        },
+        {
+          "symbol": "URANUS",
+          "name": "Uranus",
+          "token": "0x02f1ffe90ac332fcc432634c4fa69619e9c1d6a0",
+          "raw": "5584640466917452152832"
+        },
+        {
+          "symbol": "AVNT",
+          "name": "Veranta",
+          "token": "0x3cae51882495b2a2dce68b062e5143245d2b7f5d",
+          "raw": "2026000000000000000000"
+        },
+        {
+          "symbol": "RETAIL",
+          "name": "Retail",
+          "token": "0xe766b582fb90511c923bb28f1c9574170bcb2ac4",
+          "raw": "151553324297151680735"
+        },
+        {
+          "symbol": "USDG",
+          "name": "United States Global Dollars Gold",
+          "token": "0xec90adc7157d68d9213a88627b66956950374a3e",
+          "raw": "50000000000000000000"
+        },
+        {
+          "symbol": "USDG",
+          "name": "Global Dollars",
+          "token": "0x642565e604cf64ca49098505e2b9d2fffec77936",
+          "raw": "25000000000000000000"
+        },
+        {
+          "symbol": "SPCSEX",
+          "name": "SPCSEX",
+          "token": "0x366efff7918807c144700cfc4b69bd21e42537f8",
+          "raw": "9000000000000000000"
+        },
+        {
+          "symbol": "PONS",
+          "name": "PONS",
+          "token": "0x91da2b31cc53c829b7bf1907bddd385e261c6a28",
+          "raw": "8000000000000000000"
+        },
+        {
+          "symbol": "MEME",
+          "name": "MEME",
+          "token": "0xc9ec05ed00de82629cdb1d6c3ea5d34f383a5396",
+          "raw": "5000000000000000000"
+        },
+        {
+          "symbol": "mShare",
+          "name": "Minority Shareholder",
+          "token": "0x95afb21e90e60237883ef92eee8099abe55e7fd8",
+          "raw": "1000000000000000000"
+        }
+      ],
+      "other_token_count": 23,
+      "stats": {
+        "wallet": "0x4dc18b5246eb80000afac62b8617501d2976ef20",
+        "buys": 3,
+        "sells": 1,
+        "bought": 282425.1957588878,
+        "sold": 97056.84718359243,
+        "first_buy_block": 69078979,
+        "first_buy_time": "2026-09-21T20:19:35.000000Z",
+        "buy_rank": 13,
+        "sold_pct": 34.4
+      }
+    },
+    {
+      "wallet": "0x03ec01fa7dc1de17128032a7d5852075a0d727d2",
+      "eth_balance": 0.6145793971346623,
+      "other_tokens": [
+        {
+          "symbol": "AMC",
+          "name": "A Meme Coin",
+          "token": "0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+          "raw": "280355373764347502499599"
+        },
+        {
+          "symbol": "MICRODUCK",
+          "name": "microduck",
+          "token": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725",
+          "raw": "1782110847203079838074011"
+        },
+        {
+          "symbol": "OPEN",
+          "name": "OPEN",
+          "token": "0xf1b266c11f68bc936f218ad20712c4feb3e61e18",
+          "raw": "5544803772603951045107535"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "29176632341600083"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "20259457178040085"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft \u2022 Robinhood Token",
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "raw": "8568228181070226"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "11779853140165196"
+        },
+        {
+          "symbol": "CRCL",
+          "name": "Circle Internet Group \u2022 Robinhood Token",
+          "token": "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+          "raw": "34809871953092365"
+        },
+        {
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "raw": "16883387872915606663"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "raw": "3379094033049075"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "5552613455749630"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "4806310697771101"
+        },
+        {
+          "symbol": "CBBTC",
+          "name": "Coinbase Wrapped BTC",
+          "token": "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+          "raw": "937"
+        },
+        {
+          "symbol": "ORCL",
+          "name": "Oracle \u2022 Robinhood Token",
+          "token": "0xb0992820e760d836549ba69bc7598b4af75dee03",
+          "raw": "2280751147024069"
+        },
+        {
+          "symbol": "PLTR",
+          "name": "Palantir Technologies \u2022 Robinhood Token",
+          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+          "raw": "992853883123231"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel \u2022 Robinhood Token",
+          "token": "0xc72b96e0e48ecd4dc75e1e45396e26300bc39681",
+          "raw": "1297448094391894"
+        },
+        {
+          "symbol": "CRWV",
+          "name": "CoreWeave \u2022 Robinhood Token",
+          "token": "0x5f10a1c971b69e47e059e1dc91901b59b3fb49c3",
+          "raw": "1607028286334283"
+        },
+        {
+          "symbol": "USAR",
+          "name": "USA Rare Earth \u2022 Robinhood Token",
+          "token": "0xd917b029c761d264c6a312bbbcda868658ef86a6",
+          "raw": "7741059739460111"
+        },
+        {
+          "symbol": "BE",
+          "name": "Bloom Energy \u2022 Robinhood Token",
+          "token": "0x822cc93ffd030293e9842c30bbd678f530701867",
+          "raw": "388656289823635"
+        },
+        {
+          "symbol": "SNDK",
+          "name": "Sandisk Corporation \u2022 Robinhood Token",
+          "token": "0xb90a19ff0af67f7779aff50a882a9cff42446400",
+          "raw": "58474834208542"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD \u2022 Robinhood Token",
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "raw": "163245886188192"
+        },
+        {
+          "symbol": "COIN",
+          "name": "Coinbase \u2022 Robinhood Token",
+          "token": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+          "raw": "437051391094754"
+        },
+        {
+          "symbol": "RAREFRIENDS",
+          "name": "RareFriends",
+          "token": "0x0779369854d3ecdea927206718ffd7730c67b71f",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "DIH",
+          "name": "Dih",
+          "token": "0x0c1ed62d7811e5b437e537ac9d0592469c119c74",
+          "raw": "3000000000000000000"
+        },
+        {
+          "symbol": "ME\u200bME",
+          "name": "ME\u200bME",
+          "token": "0x32ed0d62e4bf390f4a8ab2ebad09ebbed31e2c89",
+          "raw": "798596300478906943057004"
+        },
+        {
+          "symbol": "MERRYMEN",
+          "name": "CultOfRobinhood",
+          "token": "0xaf6a7b30f68846ed5ea7110ba583dcfdad37f9e2",
+          "raw": "500000000000000000000000"
+        },
+        {
+          "symbol": "MERRYMEN",
+          "name": "CultOfRobinhood",
+          "token": "0x82a7003c0bec0ad36bdc2538c78ac1a22c4c148e",
+          "raw": "500000000000000000000000"
+        },
+        {
+          "symbol": "musebook",
+          "name": "musebook",
+          "token": "0xfcd3f24a1c565c9b8edf1cdf6bae7ce19fb5432f",
+          "raw": "384054739820390626885632"
+        },
+        {
+          "symbol": "CME",
+          "name": "Commodity Market Exchange",
+          "token": "0xbb1d28080d7d9addb7c1d62cd5932e9ac5d07495",
+          "raw": "219398825184204821626880"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x62229f3ca0a51d2396dedb6b54ea6789cbbc02b0",
+          "raw": "100000000000000000000000"
+        }
+      ],
+      "other_token_count": 169,
+      "stats": {
+        "wallet": "0x03ec01fa7dc1de17128032a7d5852075a0d727d2",
+        "buys": 1,
+        "sells": 1,
+        "bought": 536893.11754192,
+        "sold": 1606690.5888894878,
+        "first_buy_block": 69221712,
+        "first_buy_time": "2026-09-22T00:18:46.000000Z",
+        "buy_rank": 14,
+        "sold_pct": 299.3
+      }
+    },
+    {
+      "wallet": "0x505d4706073ef3a3d789debd0defb7004b504db7",
+      "eth_balance": 0.06605287746566846,
+      "other_tokens": [
+        {
+          "symbol": "CASHCAT",
+          "name": "Cash Cat",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "raw": "4054781285165050883"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "raw": "1185688610132058"
+        },
+        {
+          "symbol": "COIN",
+          "name": "Coinbase \u2022 Robinhood Token",
+          "token": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+          "raw": "2197588544703447"
+        },
+        {
+          "symbol": "PLTR",
+          "name": "Palantir Technologies \u2022 Robinhood Token",
+          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
+          "raw": "2261635113983189"
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "raw": "407906943169746"
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon \u2022 Robinhood Token",
+          "token": "0x12f190a9f9d7d37a250758b26824b97ce941bf54",
+          "raw": "1253008081653063"
+        },
+        {
+          "symbol": "AMD",
+          "name": "AMD \u2022 Robinhood Token",
+          "token": "0x86923f96303d656e4aa86d9d42d1e57ad2023fdc",
+          "raw": "436992137643826"
+        },
+        {
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "raw": "356529231944587"
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "raw": "689093754276978"
+        },
+        {
+          "symbol": "CRASHCAT",
+          "name": "CRASH CAT",
+          "token": "0xcf8b02128d2803b3df114e277094cc1096294b5c",
+          "raw": "2029000000000000000000"
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology \u2022 Robinhood Token",
+          "token": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+          "raw": "210480578823109"
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "raw": "1491279611559161"
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft \u2022 Robinhood Token",
+          "token": "0xe93237c50d904957cf27e7b1133b510c669c2e74",
+          "raw": "437385133204687"
+        },
+        {
+          "symbol": "GOOGL",
+          "name": "Alphabet Class A \u2022 Robinhood Token",
+          "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+          "raw": "645174626713929"
+        },
+        {
+          "symbol": "COST",
+          "name": "Costco \u2022 Robinhood Token",
+          "token": "0x4ea005168d7f09a7a0ba9d1def21a479950e44c2",
+          "raw": "221238978686818"
+        },
+        {
+          "symbol": "MSTR",
+          "name": "Strategy Inc. \u2022 Robinhood Token",
+          "token": "0xec262a75e413fafd0df80480274532c79d42da09",
+          "raw": "868859886046776"
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "raw": "13856010088716059"
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "raw": "541949248921619"
+        },
+        {
+          "symbol": "TTWO",
+          "name": "Take-Two Interactive Software \u2022 Robinhood Token",
+          "token": "0x5e81213613b6b86eab4c6c50d718d34359459786",
+          "raw": "581486004175822"
+        },
+        {
+          "symbol": "PONS",
+          "name": "Pons",
+          "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+          "raw": "139608474764674417"
+        },
+        {
+          "symbol": "CRCL",
+          "name": "Circle Internet Group \u2022 Robinhood Token",
+          "token": "0xdf0992e440dd0be65bd8439b609d6d4366bf1cb5",
+          "raw": "912832888827045"
+        },
+        {
+          "symbol": "INDEX",
+          "name": "The Index",
+          "token": "0x56910d4409f3a0c78c64dd8d0545ff0705389870",
+          "raw": "792473060186058779"
+        },
+        {
+          "symbol": "RVH",
+          "name": "Ravenhood",
+          "token": "0x96765066f6a040a21eb027167d2315b707c82633",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "\ud83e\udeb6",
+          "name": "\ud83e\udeb6 (Feather)",
+          "token": "0xa870f8c7cae9705194a141b0c2964b6c79ee3742",
+          "raw": "69000000000000000000"
+        },
+        {
+          "symbol": "DIH",
+          "name": "Dih",
+          "token": "0x0c1ed62d7811e5b437e537ac9d0592469c119c74",
+          "raw": "1000000000000000000"
+        },
+        {
+          "symbol": "SPMO",
+          "name": "Invesco S&P 500 Momentum ETF \u2022 Robinhood Token",
+          "token": "0xad622320e520de39e72d41ef07438c3fd3354875",
+          "raw": "2561"
+        },
+        {
+          "symbol": "SIGNA",
+          "name": "Signa Pad",
+          "token": "0x7d7d1961fe3265d37e673080d2d5612804ff4ae8",
+          "raw": "764752679611930858308323"
+        },
+        {
+          "symbol": "BIGD",
+          "name": "BigD",
+          "token": "0x3de536fcb8883055059c45a59134bb064ad3fc93",
+          "raw": "690000000000000000000000"
+        },
+        {
+          "symbol": "TFM",
+          "name": "Trench Fund Manager",
+          "token": "0xa5eb5344cc1bd838562929fdea2d8decae16d6cc",
+          "raw": "633063469120978914133044"
+        },
+        {
+          "symbol": "LEMONJAK",
+          "name": "Lemonjak",
+          "token": "0x2efbfd640769362e6da9ac99c7829af0f9325a3d",
+          "raw": "632761157902329838137430"
+        }
+      ],
+      "other_token_count": 144,
+      "stats": {
+        "wallet": "0x505d4706073ef3a3d789debd0defb7004b504db7",
+        "buys": 1,
+        "sells": 0,
+        "bought": 248.52781208037885,
+        "sold": 0.0,
+        "first_buy_block": 69452664,
+        "first_buy_time": "2026-09-22T06:47:40.000000Z",
+        "buy_rank": 15,
+        "sold_pct": 0.0
+      }
+    }
+  ],
+  "generated": "2026-09-24 12:30 UTC"
+}
