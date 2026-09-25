@@ -12,6 +12,9 @@ on:
         default: ""
 permissions:
   contents: write
+concurrency:
+  group: whale-scanner-save
+  cancel-in-progress: false
 jobs:
   scan:
     runs-on: ubuntu-latest
