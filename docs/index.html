@@ -26,7 +26,8 @@ main{padding:0 16px 40px}.card{background:var(--card);border:1px solid var(--lin
 .btn.p{background:var(--acc);color:#06122b;border-color:var(--acc)}svg{width:100%;height:auto;background:#0e1428;border-radius:12px;border:1px solid var(--line);touch-action:manipulation}
 .lg span{margin-right:12px;font-size:12px;color:var(--mut)}.lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
 </style></head><body>
-<header><h1 id="t">Whale Scanner</h1><div class="sub" id="s">Loading…</div></header>
+<header><h1 id="t">Whale Scanner</h1><div class="sub" id="s">Loading…</div>
+<a class="btn p" id="rescan" href="#" target="_blank" style="margin-top:10px">Scan another token ↗</a></header>
 <div class="stats" id="stats"></div><div id="w"></div>
 <div class="sheet" id="sh"><div id="shc"></div></div><nav id="nav"></nav><main id="m"></main>
 <script>
@@ -50,7 +51,8 @@ const views={
  <div class="mut">${h.early_rank?"Early buyer #"+h.early_rank+" · sold "+(h.sold_pct??"–")+"%":"Not in early buyers"}${h.wallet===D.pool_guess?" · likely liquidity pool":""}</div><div>${chips(h.wallet)}</div></div>`),
  profiles:()=>(D.profiles||[]).map(p=>`<div class="card"><div class="row">${A(p.wallet)}<b>${p.eth_balance==null?"–":p.eth_balance.toFixed(3)+" ETH"}</b></div>
  <div class="mut">${p.stats?"Bought "+n(p.stats.bought)+" · sold "+(p.stats.sold_pct??"–")+"% · rank #"+(p.stats.buy_rank||"–"):"No trades of this token"}</div><div>${chips(p.wallet)}</div>
- <div style="margin-top:6px">${p.other_token_count?`<span class="mut">${p.other_token_count} other tokens:</span> `+p.other_tokens.slice(0,8).map(t=>`<span class="chip">${esc(t.symbol||sh(t.token))}</span>`).join(""):'<span class="mut">No other tokens</span>'}</div></div>`),
+ ${p.watchlist_hits&&p.watchlist_hits.length?`<div style="margin-top:6px">${p.watchlist_hits.map(h=>`<span class="chip g">★ ${esc(h.symbol)}</span>`).join("")}</div>`:""}
+ <div style="margin-top:6px">${p.other_token_count?`<span class="mut">${p.other_token_count} other tokens${p.dust_token_count?" ("+p.dust_token_count+" dust/spam hidden)":""}:</span> `+p.other_tokens.slice(0,8).map(t=>`<span class="chip">${esc(t.symbol||sh(t.token))}${t.usd?" $"+n(t.usd):""}</span>`).join(""):`<span class="mut">No real holdings${p.dust_token_count?" ("+p.dust_token_count+" dust/spam tokens hidden)":""}</span>`}</div></div>`),
  clusters:()=>{const c=(D.balance_clusters||[]).map(c=>`<div class="card"><b>${c.wallets.length} wallets ≈ ${n(c.approx_balance)} each</b>
  <div class="mut">Near-identical balances: possible airdrop or linked wallets</div><div style="margin-top:6px">${c.wallets.map(A).join("<br>")}</div></div>`);
   const f=Object.entries(D.shared_funders||{}).map(([f,v])=>`<div class="card"><b class="y">Shared funder ${A(f)}</b><div class="mut">Sent the first ETH to ${v.length} of these wallets</div><div style="margin-top:6px">${v.map(A).join("<br>")}</div></div>`);
@@ -88,8 +90,11 @@ document.addEventListener("click",e=>{const t=e.target.closest("[data-t]");if(t)
 fetch("latest.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;
  (d.early_buyers||[]).forEach(e=>(W[e.wallet]=W[e.wallet]||{}).e=e);(d.top_holders||[]).forEach(h=>(W[h.wallet]=W[h.wallet]||{}).h=h);
  $("t").textContent=(d.symbol||"Token")+" scan";$("s").textContent="Updated "+d.generated+" · "+sh(d.token);
+ const repo=location.pathname.split("/").filter(Boolean)[0]||"";
+ $("rescan").href=`https://github.com/${location.hostname.split(".")[0]}/${repo}/actions/workflows/scan.yml`;
  $("stats").innerHTML=[["Transfers read",n(d.transfers_read)],["Early buyers",(d.early_buyers||[]).length],
   ["Shared funders",Object.keys(d.shared_funders||{}).length],["Same-balance clusters",(d.balance_clusters||[]).length]].map(([k,v])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join("");
  if(d.truncated&&Object.keys(d.truncated).length)$("w").innerHTML='<div class="warn">History was cut off, so early buyers may be incomplete. Raise MAX_PAGES.</div>';
  draw()}).catch(()=>{$("s").textContent="No data yet. Run the Scan token workflow first."});
 </script></body></html>
+
