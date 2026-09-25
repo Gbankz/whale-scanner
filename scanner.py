@@ -12,6 +12,12 @@ MAX_PAGES = int(os.environ.get("MAX_PAGES", "3000"))    # transfer pages to read
 EARLY_N = int(os.environ.get("EARLY_N", "50"))         # how many first buyers to keep
 PROFILE_N = int(os.environ.get("PROFILE_N", "15"))     # wallets to deep-profile
 POOL = os.environ.get("POOL", "").strip().lower()      # optional: force pool address
+WATCHLIST = {}
+for entry in os.environ.get("WATCHLIST", "").split(","):
+    entry = entry.strip()
+    if not entry: continue
+    parts = entry.split("|")
+    WATCHLIST[parts[0].strip().lower()] = parts[1].strip() if len(parts) > 1 else parts[0][:10]
 ZERO = "0x0000000000000000000000000000000000000000"
 
 def get(path, params=None):
@@ -144,16 +150,31 @@ def main():
         ai = get(f"/addresses/{a}") or {}
         tb = get(f"/addresses/{a}/token-balances") or []
         if isinstance(tb, dict): tb = tb.get("items", [])
-        others = []
+        others, dust, hits = [], 0, []
         for b in tb:
             tk = b.get("token") or {}
             ta = addr(tk) or (tk.get("address_hash") or "").lower()
             if ta == TOKEN: continue
-            others.append(dict(symbol=tk.get("symbol"), name=tk.get("name"), token=ta, raw=b.get("value")))
+            try: bal = int(b.get("value") or 0) / 10 ** int(tk.get("decimals") or 18)
+            except Exception: bal = 0
+            price = tk.get("exchange_rate")
+            usd = (bal * float(price)) if price not in (None, "") else None
+            # dust heuristic: has a known price and it's worth under $1, or supply is absurdly large (spam token pattern)
+            supply_ok = True
+            try:
+                if tk.get("total_supply") and int(tk["total_supply"]) / 10 ** int(tk.get("decimals") or 18) > 1e15:
+                    supply_ok = False
+            except Exception: pass
+            is_dust = (usd is not None and usd < 1) or not supply_ok
+            entry = dict(symbol=tk.get("symbol"), name=tk.get("name"), token=ta, balance=bal, usd=usd)
+            if is_dust: dust += 1; continue
+            others.append(entry)
+            if ta in WATCHLIST: hits.append(dict(token=ta, symbol=tk.get("symbol") or WATCHLIST[ta]))
+        others.sort(key=lambda o: (o["usd"] is None, -(o["usd"] or 0)))
         try: eth = int(ai.get("coin_balance") or 0) / 1e18
         except Exception: eth = None
-        profiles.append(dict(wallet=a, eth_balance=eth, other_tokens=others[:30],
-                             other_token_count=len(others), stats=w.get(a)))
+        profiles.append(dict(wallet=a, eth_balance=eth, other_tokens=others[:30], other_token_count=len(others),
+                             dust_token_count=dust, watchlist_hits=hits, stats=w.get(a)))
         time.sleep(0.3)
 
     # ---- link tracing: who funded each wallet, and who moved tokens between them ----
@@ -199,9 +220,13 @@ def main():
     for f, v in shared.items():
         for a in v: flags.setdefault(a, []).append("shared funder")
     for a in cl_wallets: flags.setdefault(a, []).append("same-balance cluster")
+    for p in profiles:
+        for h in p.get("watchlist_hits", []):
+            flags.setdefault(p["wallet"], []).append(f"holds watchlist token {h['symbol']}")
     print(f"Funders found: {len(funders)}, shared funders: {len(shared)}, wallet-to-wallet transfers: {len(transfer_edges)}")
+    if WATCHLIST: print(f"Watchlist tokens configured: {len(WATCHLIST)}")
 
-    out = dict(token=TOKEN, symbol=symbol, pool_guess=pool, transfers_read=len(tr),
+    out = dict(token=TOKEN, symbol=symbol, watchlist=WATCHLIST, pool_guess=pool, transfers_read=len(tr),
                truncated=TRUNCATED, first_transfer_block=tr[0].get("block_number"), first_transfer_from=addr(tr[0].get("from")),
                balance_clusters=clusters, funders=funders, shared_funders=shared, transfer_edges=transfer_edges, wallet_flags=flags, early_buyers=early, top_holders=top[:25], profiles=profiles,
                generated=time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()))
@@ -223,4 +248,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
