@@ -270,6 +270,3 @@ def notify_telegram(out):
 
 if __name__ == "__main__":
     main()
-
-
-
