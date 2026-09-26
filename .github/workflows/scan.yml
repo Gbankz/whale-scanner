@@ -29,6 +29,8 @@ jobs:
           BLOCKSCOUT_API_KEY: ${{ secrets.BLOCKSCOUT_API_KEY }}
           TOKEN: ${{ github.event.inputs.token }}
           WATCHLIST: ${{ github.event.inputs.watchlist }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py
       - name: Save results
         run: |
@@ -40,4 +42,6 @@ jobs:
             git pull --rebase origin main && git push && break
             echo "push attempt $i failed, retrying..."
             sleep $((RANDOM % 5 + 2))
+          done
+
           done
