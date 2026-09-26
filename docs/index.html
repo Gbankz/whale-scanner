@@ -100,6 +100,51 @@ function buyLinks(addr){return `<div class="buy">
  <a class="btn" target="_blank" href="${EXP}/token/${addr}">View on explorer ↗</a>
  <a class="btn" target="_blank" href="https://dexscreener.com/search?q=${addr}">Check chart ↗</a>
 </div><div class="mut" style="margin-top:8px">Always confirm the contract address matches before swapping — fake tokens copy real names.</div>`}
+function checkRow(label,state,detail){const c=state==="pass"?"g":state==="warn"?"y":state==="fail"?"r":"mut";
+ const icon=state==="pass"?"✓":state==="warn"?"!":state==="fail"?"✗":"?";
+ return `<div class="row" style="align-items:flex-start"><span>${label}</span><span class="${c}" style="text-align:right;font-size:13px">${icon} ${esc(detail)}</span></div>`}
+async function safetyChecklist(addr, info, holders){
+ const rows=[]; let riskScore=0;
+ // 1. Contract verified
+ try{
+  const sc=await fetch(`${BS}/smart-contracts/${addr}`);
+  if(sc.ok){rows.push(checkRow("Contract verified","pass","source code published"))}
+  else{rows.push(checkRow("Contract verified","warn","not verified — can't inspect the code")); riskScore++}
+ }catch(e){rows.push(checkRow("Contract verified","warn","couldn't check"))}
+ // 2. Token age
+ try{
+  const ai=await fetch(`${BS}/addresses/${addr}`).then(r=>r.ok?r.json():null);
+  const creator=ai&&ai.creator_address_hash;
+  if(ai&&ai.creation_tx_hash){
+   const tx=await fetch(`${BS}/transactions/${ai.creation_tx_hash}`).then(r=>r.ok?r.json():null);
+   if(tx&&tx.timestamp){
+    const ageH=(Date.now()-new Date(tx.timestamp))/3.6e6;
+    rows.push(checkRow("Token age", ageH<24?"warn":"pass", ageH<1?"under 1 hour old":ageH<24?ageH.toFixed(0)+"h old — very new":Math.floor(ageH/24)+"d old"));
+    if(ageH<24) riskScore++;
+   }
+  }
+  // 3. Deployer's other contracts (informational — not proof of rugging, just worth a manual look)
+  if(creator){
+   const dtx=await fetch(`${BS}/addresses/${creator}/transactions`).then(r=>r.ok?r.json():null);
+   const created=(dtx&&dtx.items||[]).filter(t=>t.created_contract).length;
+   rows.push(`<div class="row"><span>Deployer</span><span>${A(creator)}</span></div>`);
+   if(created>1){rows.push(checkRow("Deployer's other tokens", "warn", created+" other contracts — review manually")); riskScore++}
+   else{rows.push(checkRow("Deployer's other tokens", "pass", "none found in recent history"))}
+  }
+ }catch(e){rows.push(checkRow("Deployer check","warn","couldn't check"))}
+ // 4. Holder concentration (excluding pool-sized top holder, which is usually the LP)
+ try{
+  const items=(holders&&holders.items)||[];
+  const dec=Number(info.decimals||18), supply=Number(info.total_supply||0)/10**dec;
+  const top=items.slice(1,11).reduce((s,h)=>s+Number(h.value||0)/10**dec,0); // skip #1, usually the pool
+  const pct=supply?Math.round(100*top/supply):null;
+  if(pct!=null){rows.push(checkRow("Top 10 holders (excl. pool)", pct>40?"fail":pct>20?"warn":"pass", pct+"% of supply"));
+   if(pct>40) riskScore+=2; else if(pct>20) riskScore++;}
+ }catch(e){}
+ rows.push(`<div class="mut" style="margin-top:8px">Not checked automatically: liquidity lock status and buy/sell tax (honeypot risk). Verify these manually before buying — check if LP tokens are burned, and try a tiny test buy/sell first.</div>`);
+ const verdict = riskScore>=3?["r","High risk — multiple red flags"]:riskScore>=1?["y","Some caution flags — review before buying"]:["g","No automatic red flags found"];
+ return `<div style="margin-top:10px"><div class="row"><b>Pre-buy checklist</b><span class="${verdict[0]}">${verdict[1]}</span></div>${rows.join("")}</div>`;
+}
 async function quickLookup(addr){
  addr=(addr||"").trim().toLowerCase();
  if(!/^0x[0-9a-f]{40}$/.test(addr)){$("qv").innerHTML='<div class="qv err">That does not look like a valid contract address (should start with 0x, 42 characters).</div>';return}
@@ -113,7 +158,10 @@ async function quickLookup(addr){
   $("qv").innerHTML=`<div class="qv"><div class="row"><b>${esc(info.name||"Unknown")} (${esc(info.symbol||"?")})</b>${info.exchange_rate?`<span>$${esc(info.exchange_rate)}</span>`:""}</div>
    <div class="mut">${A(addr)} · holders: ${esc(info.holders_count||info.holders||hn||"–")}${info.total_supply?" · supply "+n(Number(info.total_supply)/10**Number(info.decimals||18)):""}</div>
    ${buyLinks(addr)}
+   <div id="chk" class="mut">Running safety checks…</div>
    <div style="margin-top:10px"><button class="btn p" id="deepscan" data-a="${addr}">Run full whale scan on GitHub ↗</button></div></div>`;
+  const chk = await safetyChecklist(addr, info, holders);
+  $("chk").outerHTML = chk;
  }catch(e){$("qv").innerHTML='<div class="qv err">Lookup failed — the explorer may be rate-limiting. Try again in a moment.</div>'}
 }
 $("qbtn").addEventListener("click",()=>quickLookup($("q").value));
@@ -133,6 +181,7 @@ fetch("latest.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).the
  if(d.truncated&&Object.keys(d.truncated).length)$("w").innerHTML='<div class="warn">History was cut off, so early buyers may be incomplete. Raise MAX_PAGES.</div>';
  draw()}).catch(()=>{$("s").textContent="No data yet. Run the Scan token workflow first."});
 </script></body></html>
+
 
 
 
