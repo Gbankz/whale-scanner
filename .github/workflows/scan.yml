@@ -43,5 +43,3 @@ jobs:
             echo "push attempt $i failed, retrying..."
             sleep $((RANDOM % 5 + 2))
           done
-
-          done
