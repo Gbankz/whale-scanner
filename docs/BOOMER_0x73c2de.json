@@ -3,7 +3,7 @@
   "symbol": "BOOMER",
   "watchlist": {},
   "pool_guess": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
-  "transfers_read": 68131,
+  "transfers_read": 68151,
   "truncated": {
     "/tokens/0x73c2de14c7fa0a57cc2d9722b959ea70b881ffe4/holders": true
   },
@@ -105,12 +105,12 @@
       ]
     },
     {
-      "approx_balance": 6189015,
+      "approx_balance": 6183380,
       "wallets": [
         "0x2069804e62d6c250ed3e000bdd045f7873c38e02",
         "0xd0f43ec0bf05f7e892f60d0074835d05883565be",
-        "0x4f2cb899a2aa275d6ccf26756ceb0009f5431a65",
-        "0xc86e7efe91c94c09a93623e5a75b469ae83ecd0b"
+        "0xc86e7efe91c94c09a93623e5a75b469ae83ecd0b",
+        "0x5c85ad019e6a18aae9a81e368c8f2b7a58a1f779"
       ]
     },
     {
@@ -365,124 +365,100 @@
       "shared funder",
       "same-balance cluster"
     ],
-    "0x2ea7e5b35d328db4364a9f5cc3debedb078962e2": [
+    "0x3622d1b3445a3d630760b31e1c5e92d4b67e7170": [
       "same-balance cluster"
     ],
-    "0x70471efd821044aaa52c199ef6b85c4a694bc233": [
+    "0xebf866fddf3956f933ebb6572238d7b111481ce2": [
       "same-balance cluster"
     ],
-    "0x26b9b4f89865b8516ff38ce7a9570379f9f33656": [
-      "same-balance cluster"
-    ],
-    "0xfa327f245344f077fec280fe247c85660dac3d4b": [
-      "same-balance cluster"
-    ],
-    "0xd39198c0cc7ddf4ca4d43508726da41d8e9bd8da": [
-      "same-balance cluster"
-    ],
-    "0x45ccc622b5fe4d28503b63c6c6c5372bf4d61b62": [
+    "0x7674993a8444d4d3704179a11bf41486a9ceeb96": [
       "same-balance cluster"
     ],
     "0x2258ce7a0d2af0ef2536408afab8f784c80a2157": [
       "same-balance cluster"
     ],
-    "0xa49857db046657e57fed54e175d19ba3db52e141": [
+    "0x506a98cbaf1f8241ffafbe20da4aae99873dc203": [
       "same-balance cluster"
     ],
-    "0x2069804e62d6c250ed3e000bdd045f7873c38e02": [
-      "same-balance cluster"
-    ],
-    "0x749eac17868c60d6ab6a106b6953a996b973afdc": [
-      "same-balance cluster"
-    ],
-    "0x114606382972f167f967b091ee0218e521157de9": [
-      "same-balance cluster"
-    ],
-    "0x537b7e3cd6a464744ce3c7c0504d78129988d441": [
+    "0x45ccc622b5fe4d28503b63c6c6c5372bf4d61b62": [
       "same-balance cluster"
     ],
     "0xeed7502e8f4004e03cc6922079c445437e93a657": [
       "same-balance cluster"
     ],
-    "0x11bd5979b8583bee134f6b9eee3dd426a5a1f7b3": [
+    "0xad51e4b06de14812286a496c399096d9a5abf00d": [
       "same-balance cluster"
     ],
-    "0xf2b16e4c96a8e887f2f8c00bee42bb4af401328e": [
-      "same-balance cluster"
-    ],
-    "0xfdfeab0703bfd72c26858fd964d22e36e86bdf28": [
-      "same-balance cluster"
-    ],
-    "0x6f8cc79d9ee74ad91e0369007e21b54d5a28d755": [
-      "same-balance cluster"
-    ],
-    "0x095fe61e8741d39e14bf0f78f7034db81f2b91c6": [
-      "same-balance cluster"
-    ],
-    "0x26fa89c8d36df5f86d722da8ace87ca7cdd78f16": [
+    "0xcda17e758cfc96600cd5ed6d351ed58542b263e4": [
       "same-balance cluster"
     ],
     "0xd0f43ec0bf05f7e892f60d0074835d05883565be": [
       "same-balance cluster"
     ],
-    "0x3622d1b3445a3d630760b31e1c5e92d4b67e7170": [
-      "same-balance cluster"
-    ],
-    "0xddb0f205486a84c85d98e11a7f12b9552a09e2f8": [
-      "same-balance cluster"
-    ],
-    "0x96593300672153375cb0cdc571df009f103ded33": [
-      "same-balance cluster"
-    ],
     "0xf1dabd3e06b6f4db90cdae8d51af899cdbe2dcde": [
-      "same-balance cluster"
-    ],
-    "0x20903faa1d54954ecf540ea9015bd013e7b3fad0": [
-      "same-balance cluster"
-    ],
-    "0xd80146dbd243e56a4fdabbab4a38b306b9f64211": [
-      "same-balance cluster"
-    ],
-    "0x367d3d82d1f856fa8eac652aa39d6a9835d9097f": [
-      "same-balance cluster"
-    ],
-    "0xc86e7efe91c94c09a93623e5a75b469ae83ecd0b": [
-      "same-balance cluster"
-    ],
-    "0x6b2146d7dd870916bcc8b6fa91899c4ef795209b": [
-      "same-balance cluster"
-    ],
-    "0x2c9ec39df247bbbb2fe8c950606a1e3280302835": [
-      "same-balance cluster"
-    ],
-    "0x226beaff3611ea80fd8bfd04c0c2ab6fcee1ede0": [
-      "same-balance cluster"
-    ],
-    "0xdd1b0da0770b9751d336812b7470cb7e5cfaac30": [
-      "same-balance cluster"
-    ],
-    "0x310b851103162bac8c61738a6038ea5116ea2a19": [
-      "same-balance cluster"
-    ],
-    "0xec32f022c086b451c98bc3c78a46a800ac581c1f": [
-      "same-balance cluster"
-    ],
-    "0x506a98cbaf1f8241ffafbe20da4aae99873dc203": [
-      "same-balance cluster"
-    ],
-    "0xa633577a93b43a1be4c52f33d4bb92fdb274a07c": [
-      "same-balance cluster"
-    ],
-    "0xa2c949f6dab8f2ec884ee81e9f2d71f9c9cd4bc5": [
-      "same-balance cluster"
-    ],
-    "0xee3c8e217259b88a4148617b07f65213ad20641a": [
       "same-balance cluster"
     ],
     "0x4cb6d301b0c0687089ed6a097b45320916eae151": [
       "same-balance cluster"
     ],
-    "0x4f2cb899a2aa275d6ccf26756ceb0009f5431a65": [
+    "0x3d26cfb1b4d5add9e5c219e7b468f5e28dd745ef": [
+      "same-balance cluster"
+    ],
+    "0xc86e7efe91c94c09a93623e5a75b469ae83ecd0b": [
+      "same-balance cluster"
+    ],
+    "0x11bd5979b8583bee134f6b9eee3dd426a5a1f7b3": [
+      "same-balance cluster"
+    ],
+    "0x96593300672153375cb0cdc571df009f103ded33": [
+      "same-balance cluster"
+    ],
+    "0x26b9b4f89865b8516ff38ce7a9570379f9f33656": [
+      "same-balance cluster"
+    ],
+    "0x749eac17868c60d6ab6a106b6953a996b973afdc": [
+      "same-balance cluster"
+    ],
+    "0x70471efd821044aaa52c199ef6b85c4a694bc233": [
+      "same-balance cluster"
+    ],
+    "0x22d026e5ce308457eeebd99416df506ab19c41d7": [
+      "same-balance cluster"
+    ],
+    "0x20903faa1d54954ecf540ea9015bd013e7b3fad0": [
+      "same-balance cluster"
+    ],
+    "0x66bb4408a1fdbc4134942ef81f8fc8690f73e64f": [
+      "same-balance cluster"
+    ],
+    "0x2069804e62d6c250ed3e000bdd045f7873c38e02": [
+      "same-balance cluster"
+    ],
+    "0xec32f022c086b451c98bc3c78a46a800ac581c1f": [
+      "same-balance cluster"
+    ],
+    "0x79894800c80d6829ec7e973171a64b18eb4e63bd": [
+      "same-balance cluster"
+    ],
+    "0x26fa89c8d36df5f86d722da8ace87ca7cdd78f16": [
+      "same-balance cluster"
+    ],
+    "0xd80146dbd243e56a4fdabbab4a38b306b9f64211": [
+      "same-balance cluster"
+    ],
+    "0x95eebe4d15d4de6e11fda7d8b7b6a88d12ff8d4c": [
+      "same-balance cluster"
+    ],
+    "0x095fe61e8741d39e14bf0f78f7034db81f2b91c6": [
+      "same-balance cluster"
+    ],
+    "0x2c9ec39df247bbbb2fe8c950606a1e3280302835": [
+      "same-balance cluster"
+    ],
+    "0x06e52db5d5922c07891bf3a1db751563580b1988": [
+      "same-balance cluster"
+    ],
+    "0xfdfeab0703bfd72c26858fd964d22e36e86bdf28": [
       "same-balance cluster"
     ],
     "0xa8c216e7a953da2e1fb491610206cf825b058350": [
@@ -491,77 +467,101 @@
     "0xd1c77a04b87393e98a1220532e72e8f7d0a31c5a": [
       "same-balance cluster"
     ],
-    "0x217a0da3b501bac28f79967cad5eb3cf7e34a708": [
-      "same-balance cluster"
-    ],
-    "0x06e52db5d5922c07891bf3a1db751563580b1988": [
-      "same-balance cluster"
-    ],
     "0x0aa1306df82e38911cd5b5520629912ad036e704": [
       "same-balance cluster"
     ],
-    "0xb5836a7b9b978c3f4376c0f5624a5a4766ed07cc": [
-      "same-balance cluster"
-    ],
-    "0xad51e4b06de14812286a496c399096d9a5abf00d": [
-      "same-balance cluster"
-    ],
-    "0x22d026e5ce308457eeebd99416df506ab19c41d7": [
-      "same-balance cluster"
-    ],
-    "0x95eebe4d15d4de6e11fda7d8b7b6a88d12ff8d4c": [
-      "same-balance cluster"
-    ],
-    "0x3d26cfb1b4d5add9e5c219e7b468f5e28dd745ef": [
-      "same-balance cluster"
-    ],
-    "0x79894800c80d6829ec7e973171a64b18eb4e63bd": [
-      "same-balance cluster"
-    ],
-    "0xb50346179ab37e54ca438b68c63baecb2f7108ed": [
-      "same-balance cluster"
-    ],
-    "0x9f0d486bbaf1521a7a23c6b562240bf7a17ff38f": [
-      "same-balance cluster"
-    ],
-    "0xebf866fddf3956f933ebb6572238d7b111481ce2": [
-      "same-balance cluster"
-    ],
-    "0xee8f8bdbefa5bf5708c384a3a3bd3dd507e24c35": [
-      "same-balance cluster"
-    ],
-    "0x66bb4408a1fdbc4134942ef81f8fc8690f73e64f": [
-      "same-balance cluster"
-    ],
-    "0xc339cf792e49632714986fece3e88a391a2e7244": [
-      "same-balance cluster"
-    ],
-    "0x28f6fdb1549c617af2eec12f0e63f48417d840c3": [
-      "same-balance cluster"
-    ],
-    "0x7674993a8444d4d3704179a11bf41486a9ceeb96": [
-      "same-balance cluster"
-    ],
-    "0xcda17e758cfc96600cd5ed6d351ed58542b263e4": [
-      "same-balance cluster"
-    ],
-    "0x4560fe27fde8cb25fb26eec1c0c014eff8ba6291": [
+    "0xd39198c0cc7ddf4ca4d43508726da41d8e9bd8da": [
       "same-balance cluster"
     ],
     "0x7c50c4d62cabaf4da1d88f504221ad2f46116adf": [
       "same-balance cluster"
     ],
+    "0xf2b16e4c96a8e887f2f8c00bee42bb4af401328e": [
+      "same-balance cluster"
+    ],
+    "0xc339cf792e49632714986fece3e88a391a2e7244": [
+      "same-balance cluster"
+    ],
+    "0x6b2146d7dd870916bcc8b6fa91899c4ef795209b": [
+      "same-balance cluster"
+    ],
+    "0x6f8cc79d9ee74ad91e0369007e21b54d5a28d755": [
+      "same-balance cluster"
+    ],
+    "0xb5836a7b9b978c3f4376c0f5624a5a4766ed07cc": [
+      "same-balance cluster"
+    ],
     "0xebbe99e61aea64467d93aa5a1b8b82609d046673": [
+      "same-balance cluster"
+    ],
+    "0x5c85ad019e6a18aae9a81e368c8f2b7a58a1f779": [
+      "same-balance cluster"
+    ],
+    "0xa633577a93b43a1be4c52f33d4bb92fdb274a07c": [
+      "same-balance cluster"
+    ],
+    "0x4560fe27fde8cb25fb26eec1c0c014eff8ba6291": [
+      "same-balance cluster"
+    ],
+    "0x28f6fdb1549c617af2eec12f0e63f48417d840c3": [
+      "same-balance cluster"
+    ],
+    "0xee3c8e217259b88a4148617b07f65213ad20641a": [
+      "same-balance cluster"
+    ],
+    "0xdd1b0da0770b9751d336812b7470cb7e5cfaac30": [
+      "same-balance cluster"
+    ],
+    "0xfa327f245344f077fec280fe247c85660dac3d4b": [
+      "same-balance cluster"
+    ],
+    "0xb50346179ab37e54ca438b68c63baecb2f7108ed": [
+      "same-balance cluster"
+    ],
+    "0xa2c949f6dab8f2ec884ee81e9f2d71f9c9cd4bc5": [
+      "same-balance cluster"
+    ],
+    "0x217a0da3b501bac28f79967cad5eb3cf7e34a708": [
+      "same-balance cluster"
+    ],
+    "0x310b851103162bac8c61738a6038ea5116ea2a19": [
+      "same-balance cluster"
+    ],
+    "0x2ea7e5b35d328db4364a9f5cc3debedb078962e2": [
+      "same-balance cluster"
+    ],
+    "0x9f0d486bbaf1521a7a23c6b562240bf7a17ff38f": [
+      "same-balance cluster"
+    ],
+    "0x114606382972f167f967b091ee0218e521157de9": [
+      "same-balance cluster"
+    ],
+    "0x367d3d82d1f856fa8eac652aa39d6a9835d9097f": [
+      "same-balance cluster"
+    ],
+    "0xa49857db046657e57fed54e175d19ba3db52e141": [
+      "same-balance cluster"
+    ],
+    "0xddb0f205486a84c85d98e11a7f12b9552a09e2f8": [
+      "same-balance cluster"
+    ],
+    "0xee8f8bdbefa5bf5708c384a3a3bd3dd507e24c35": [
+      "same-balance cluster"
+    ],
+    "0x537b7e3cd6a464744ce3c7c0504d78129988d441": [
+      "same-balance cluster"
+    ],
+    "0x226beaff3611ea80fd8bfd04c0c2ab6fcee1ede0": [
       "same-balance cluster"
     ]
   },
   "early_buyers": [
     {
       "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
-      "buys": 10083,
-      "sells": 3928,
-      "bought": 158603873.56027928,
-      "sold": 158596404.63276812,
+      "buys": 10086,
+      "sells": 3929,
+      "bought": 158642249.20383266,
+      "sold": 158616872.21963057,
       "first_buy_block": 53809214,
       "first_buy_time": "2026-09-03T23:39:41.000000Z",
       "buy_rank": 1,
@@ -1116,7 +1116,7 @@
     },
     {
       "wallet": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
-      "balance": 33393691.63213574,
+      "balance": 32644263.731521234,
       "early_rank": null,
       "sold_pct": null
     },
@@ -1262,228 +1262,228 @@
   "profiles": [
     {
       "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
-      "eth_balance": 4.74303009220714,
+      "eth_balance": 4.516804338464534,
       "other_tokens": [
-        {
-          "symbol": "ARIA",
-          "name": "Aria",
-          "token": "0xa74a94c15b95f8d5f3abdd2db00f6c7384037b55",
-          "balance": 5092818.933862286,
-          "usd": 2782.512552704998
-        },
         {
           "symbol": "GLD",
           "name": "SPDR Gold Shares \u2022 Robinhood Token",
           "token": "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
-          "balance": 6.743956492852512,
-          "usd": 2646.868044314754
+          "balance": 6.93252916156852,
+          "usd": 2718.03670837617
+        },
+        {
+          "symbol": "ARIA",
+          "name": "Aria",
+          "token": "0xa74a94c15b95f8d5f3abdd2db00f6c7384037b55",
+          "balance": 4253191.165906739,
+          "usd": 1915.382109654441
         },
         {
           "symbol": "USDG",
           "name": "Global Dollar",
           "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
-          "balance": 1581.351616,
-          "usd": 1581.3310584289918
-        },
-        {
-          "symbol": "XL",
-          "name": "X Link",
-          "token": "0x1cdb289befdfac8af945a288bcdccc382cb34d32",
-          "balance": 2460599.4085976067,
-          "usd": 1179.5867504876067
-        },
-        {
-          "symbol": "NVDA",
-          "name": "NVIDIA \u2022 Robinhood Token",
-          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
-          "balance": 5.187121964802552,
-          "usd": 1164.871979635709
+          "balance": 1334.793113,
+          "usd": 1334.793113
         },
         {
           "symbol": "KNIGHT",
           "name": "Knight",
           "token": "0xd79eb5d4edf7bd843eef5109f1a1ff5c96b17948",
-          "balance": 2909905.6251476156,
-          "usd": 1118.975109094264
+          "balance": 2953895.4670490837,
+          "usd": 1168.0293455805486
         },
         {
-          "symbol": "CASHED",
-          "name": "Cashed Money",
-          "token": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
-          "balance": 169896.86867306783,
-          "usd": 493.52152102758765
+          "symbol": "NVDA",
+          "name": "NVIDIA \u2022 Robinhood Token",
+          "token": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+          "balance": 4.25653975268378,
+          "usd": 956.5296132230991
         },
         {
-          "symbol": "DARK",
-          "name": "Darkwoods",
-          "token": "0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e",
-          "balance": 163821.01584599278,
-          "usd": 397.66404849503823
+          "symbol": "XL",
+          "name": "X Link",
+          "token": "0x1cdb289befdfac8af945a288bcdccc382cb34d32",
+          "balance": 2767729.3608661755,
+          "usd": 868.4304415589799
         },
         {
-          "symbol": "SIRIUS",
-          "name": "The Dogestar",
-          "token": "0x3b4a0048a00787a644932cd648faa043410c163e",
-          "balance": 272884.97032558196,
-          "usd": 309.27963881790487
-        },
-        {
-          "symbol": "META",
-          "name": "Meta Platforms \u2022 Robinhood Token",
-          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
-          "balance": 0.33228020618618775,
-          "usd": 248.60540466438195
+          "symbol": "ZZZ",
+          "name": "ZZZ",
+          "token": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+          "balance": 17084.26204082891,
+          "usd": 339.178296204707
         },
         {
           "symbol": "GME",
           "name": "GameStop \u2022 Robinhood Token",
           "token": "0x1b0e319c6a659f002271b69db8a7df2f911c153e",
-          "balance": 10.462993794168717,
-          "usd": 245.4618344111981
+          "balance": 13.4664891115833,
+          "usd": 316.5971590133234
         },
         {
-          "symbol": "PRIORS",
-          "name": "Priors Agents",
-          "token": "0xedbf91223639800bcd5756815caf908df3b890be",
-          "balance": 123343.24537811287,
-          "usd": 195.6963931169139
-        },
-        {
-          "symbol": "SPY",
-          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
-          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
-          "balance": 0.24618362142225883,
-          "usd": 189.93558759970114
-        },
-        {
-          "symbol": "NOSH",
-          "name": "UseNosh",
-          "token": "0xe02c53d448a62067b2ac10ed70f5bc6c29471386",
-          "balance": 93806.10442929262,
-          "usd": 185.0756917948172
-        },
-        {
-          "symbol": "SPCX",
-          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
-          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
-          "balance": 1.1282993125753242,
-          "usd": 167.6878438349447
+          "symbol": "META",
+          "name": "Meta Platforms \u2022 Robinhood Token",
+          "token": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35",
+          "balance": 0.36412902829185834,
+          "usd": 271.96432994090605
         },
         {
           "symbol": "QUANTA",
           "name": "Quanta Pools",
           "token": "0x1da81ca017949efbe07972776580d04592ba9b63",
-          "balance": 359239.6761960379,
-          "usd": 162.69964934918556
+          "balance": 501645.38165058964,
+          "usd": 265.38043980079493
+        },
+        {
+          "symbol": "PRIORS",
+          "name": "Priors Agents",
+          "token": "0xedbf91223639800bcd5756815caf908df3b890be",
+          "balance": 149458.6938343833,
+          "usd": 226.46429665867262
+        },
+        {
+          "symbol": "SPY",
+          "name": "SPDR S&P 500 ETF Trust \u2022 Robinhood Token",
+          "token": "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+          "balance": 0.2607076954051949,
+          "usd": 201.07081008125655
         },
         {
           "symbol": "BUN",
           "name": "Bundle Cat",
           "token": "0x07ebb29a38fbcb41563817e5e19f2cec619c90d2",
-          "balance": 1900.6965460870497,
-          "usd": 153.60289067547882
+          "balance": 2413.3717630987885,
+          "usd": 192.43743764597122
+        },
+        {
+          "symbol": "CASHED",
+          "name": "Cashed Money",
+          "token": "0x6249519883b8d7ccf915dfcd6c0442984dae9d24",
+          "balance": 63332.27381794554,
+          "usd": 182.73577626060916
+        },
+        {
+          "symbol": "SPCX",
+          "name": "Space Exploration Technologies Corp \u2022 Robinhood Token",
+          "token": "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+          "balance": 1.0453331842516762,
+          "usd": 155.21107119768888
         },
         {
           "symbol": "TALIS",
           "name": "Talis",
           "token": "0xd5d26bac627e8d9b67517be63dd418acb3a2d8e2",
-          "balance": 111821.53444338444,
-          "usd": 149.14308977920845
-        },
-        {
-          "symbol": "MICRODUCK",
-          "name": "microduck",
-          "token": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725",
-          "balance": 24676.193491994873,
-          "usd": 118.75418118022532
+          "balance": 108326.7018767154,
+          "usd": 128.27073095923745
         },
         {
           "symbol": "GOOGL",
           "name": "Alphabet Class A \u2022 Robinhood Token",
           "token": "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
-          "balance": 0.287181629422428,
-          "usd": 98.6354024414271
+          "balance": 0.3377510491708441,
+          "usd": 115.92629260690882
         },
         {
           "symbol": "QQQ",
           "name": "Invesco QQQ \u2022 Robinhood Token",
           "token": "0xd5f3879160bc7c32ebb4dc785f8a4f505888de68",
-          "balance": 0.12896291284034672,
-          "usd": 96.09155598647075
+          "balance": 0.12853133577462186,
+          "usd": 95.70957387121442
         },
         {
-          "symbol": "WORM",
-          "name": "Agent Wormhole",
-          "token": "0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d",
-          "balance": 24520.715045174038,
-          "usd": 95.6756615847114
-        },
-        {
-          "symbol": "DJT",
-          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
-          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
-          "balance": 10.446483670120124,
-          "usd": 94.85407172469073
-        },
-        {
-          "symbol": "GRASS",
-          "name": "Touch Grass",
-          "token": "0x16391c40e85fb2246a2c8c17bfa2594c5d3ef84b",
-          "balance": 48462.90059869569,
-          "usd": 93.76505082034446
+          "symbol": "CBBTC",
+          "name": "Coinbase Wrapped BTC",
+          "token": "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+          "balance": 0.00112571,
+          "usd": 94.63956541
         },
         {
           "symbol": "GLC",
           "name": "Goldcoin",
           "token": "0xaf0172ddea4ce60db3ebab05748a00b14fc8e433",
           "balance": 187370.29222355573,
-          "usd": 93.61581910365516
+          "usd": 93.6551668650221
+        },
+        {
+          "symbol": "MU",
+          "name": "Micron Technology \u2022 Robinhood Token",
+          "token": "0xff080c8ce2e5feadaca0da81314ae59d232d4afd",
+          "balance": 0.08619628473325418,
+          "usd": 93.22645371609839
+        },
+        {
+          "symbol": "DJT",
+          "name": "Trump Media & Technology Group Corp. \u2022 Robinhood Token",
+          "token": "0x1d11f0496982706c5e14a514d4e79f2e6bde4516",
+          "balance": 10.19029975926631,
+          "usd": 92.5279218141381
         },
         {
           "symbol": "PONS",
           "name": "Pons",
           "token": "0x39dbed3a2bd333467115de45665cc57f813c4571",
           "balance": 145.19507027245547,
-          "usd": 91.68647622001772
+          "usd": 91.0614114424948
         },
         {
-          "symbol": "CME",
-          "name": "Commodity Market Exchange",
-          "token": "0xe2324ff2a59f8ecba8c321c6466e59121c00e795",
-          "balance": 134101.80751549255,
-          "usd": 88.28994803204998
+          "symbol": "NOVAAI",
+          "name": "NovaAI",
+          "token": "0x51250b135174ca09450ec01c4aff73cf69dbb590",
+          "balance": 230.36220387644815,
+          "usd": 78.76014641874599
         },
         {
-          "symbol": "CBBTC",
-          "name": "Coinbase Wrapped BTC",
-          "token": "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
-          "balance": 0.00104668,
-          "usd": 88.07916868
+          "symbol": "SHUFFLE",
+          "name": "Shuffle",
+          "token": "0x6eacc0461fdf3bd446634ccd0ed774a1ead028cc",
+          "balance": 190548.2887060915,
+          "usd": 76.75285069081364
         },
         {
-          "symbol": "PLTR",
-          "name": "Palantir Technologies \u2022 Robinhood Token",
-          "token": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a",
-          "balance": 0.4356194492357667,
-          "usd": 82.79818871624217
+          "symbol": "PURSER",
+          "name": "Purserfi",
+          "token": "0x314ad0f11422842d28b4f950a64cd40fafb029fd",
+          "balance": 451809.5548108237,
+          "usd": 73.20218407044966
         },
         {
-          "symbol": "AUR",
-          "name": "Aurum",
-          "token": "0xb0788f5f65a9f4c0d8a634c45c391234f46221ab",
-          "balance": 56090.30404739779,
-          "usd": 80.39703730633761
+          "symbol": "SFX",
+          "name": "SAFIX",
+          "token": "0x0a574aae41da077713ba32aa05ca151c8759e2f6",
+          "balance": 682095.1830672338,
+          "usd": 71.73595040318098
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple \u2022 Robinhood Token",
+          "token": "0xaf3d76f1834a1d425780943c99ea8a608f8a93f9",
+          "balance": 0.1944114382803016,
+          "usd": 66.17765359061467
+        },
+        {
+          "symbol": "COIN",
+          "name": "Coinbase \u2022 Robinhood Token",
+          "token": "0x6330d8c3178a418788df01a47479c0ce7ccf450b",
+          "balance": 0.32415612013061257,
+          "usd": 63.181269374657695
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla \u2022 Robinhood Token",
+          "token": "0x322f0929c4625ed5bad873c95208d54e1c003b2d",
+          "balance": 0.15626388724298926,
+          "usd": 58.009842861214906
         }
       ],
-      "other_token_count": 4504,
-      "dust_token_count": 103,
+      "other_token_count": 4521,
+      "dust_token_count": 102,
       "watchlist_hits": [],
       "stats": {
         "wallet": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
-        "buys": 10083,
-        "sells": 3928,
-        "bought": 158603873.56027928,
-        "sold": 158596404.63276812,
+        "buys": 10086,
+        "sells": 3929,
+        "bought": 158642249.20383266,
+        "sold": 158616872.21963057,
         "first_buy_block": 53809214,
         "first_buy_time": "2026-09-03T23:39:41.000000Z",
         "buy_rank": 1,
@@ -1790,14 +1790,14 @@
           "name": "legs.fun",
           "token": "0x8fcf98e1348d3ddee46cdd15a5c7d9a8d423077d",
           "balance": 3722152.322640941,
-          "usd": 84.93951600266627
+          "usd": 84.6789653400814
         },
         {
           "symbol": "WAIFU",
           "name": "Waifu",
           "token": "0x948647a06a6422dceea3711297f82aef68ec641c",
           "balance": 1465997.8659255716,
-          "usd": 27.956579303200648
+          "usd": 25.581662760401226
         },
         {
           "symbol": "MICA",
@@ -2020,21 +2020,21 @@
           "name": "legs.fun",
           "token": "0x8fcf98e1348d3ddee46cdd15a5c7d9a8d423077d",
           "balance": 3650392.3081706287,
-          "usd": 83.30195247245373
+          "usd": 83.0464250108818
         },
         {
           "symbol": "WAIFU",
           "name": "Waifu",
           "token": "0x948647a06a6422dceea3711297f82aef68ec641c",
           "balance": 1448913.1232992918,
-          "usd": 27.630773261317493
+          "usd": 25.283534001572644
         },
         {
           "symbol": "QQQ",
           "name": "Invesco QQQ \u2022 Robinhood Token",
           "token": "0xd5f3879160bc7c32ebb4dc785f8a4f505888de68",
           "balance": 0.003270433596055597,
-          "usd": 2.4368327767569857
+          "usd": 2.4352956729668396
         },
         {
           "symbol": "MICA",
@@ -2480,7 +2480,7 @@
           "name": "Global Dollar",
           "token": "0x5fc5360d0400a0fd4f2af552add042d716f1d168",
           "balance": 2481.53823,
-          "usd": 2481.50597000301
+          "usd": 2481.53823
         },
         {
           "symbol": "POOCH",
@@ -2702,5 +2702,5 @@
       }
     }
   ],
-  "generated": "2026-09-26 12:11 UTC"
+  "generated": "2026-09-26 13:02 UTC"
 }
