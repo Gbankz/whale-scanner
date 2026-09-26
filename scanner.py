@@ -233,6 +233,7 @@ def main():
     os.makedirs("docs", exist_ok=True)
     with open(f"docs/{symbol}_{TOKEN[:8]}.json", "w") as fh: json.dump(out, fh, indent=2, default=str)
     with open("docs/latest.json", "w") as fh: json.dump(out, fh, indent=2, default=str)
+    notify_telegram(out)
 
     print(f"\nFirst transfer: block {tr[0].get('block_number')} from {addr(tr[0].get('from'))}")
     print("HISTORY TRUNCATED - raise MAX_PAGES" if TRUNCATED else "Full history loaded")
@@ -246,7 +247,29 @@ def main():
     for t in top[:10]:
         print(f"{t['wallet']} bal {t['balance']:.0f} early_rank {t['early_rank']}")
 
+def notify_telegram(out):
+    tok, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+    if not (tok and chat): return  # Telegram not set up - skip silently
+    e = out.get("early_buyers") or []
+    snipers = [x for x, fl in (out.get("wallet_flags") or {}).items() if any(f.startswith("sniper") for f in fl)]
+    shared = out.get("shared_funders") or {}
+    lines = [f"Scan done: {out.get('symbol')} ({out.get('token','')[:10]}...)",
+             f"{out.get('transfers_read')} transfers read, {len(e)} early buyers",
+             f"{len(snipers)} sniper-timed buyers, {len(shared)} shared-funder group(s)"]
+    if e:
+        top = sorted(e, key=lambda x: x['buy_rank'])[:5]
+        lines.append("Top early buyers:")
+        for b in top:
+            lines.append(f"  #{b['buy_rank']} {b['wallet'][:10]}... sold {b.get('sold_pct','–')}%")
+    lines.append("Full detail: open the dashboard app.")
+    try:
+        requests.post(f"https://api.telegram.org/bot{tok}/sendMessage",
+                       json={"chat_id": chat, "text": "\n".join(lines)}, timeout=15)
+    except Exception as e:
+        print(f"! telegram notify failed: {e}", file=sys.stderr)
+
 if __name__ == "__main__":
     main()
+
 
 
