@@ -25,9 +25,16 @@ main{padding:0 16px 40px}.card{background:var(--card);border:1px solid var(--lin
 .btn{display:inline-block;background:#222a48;color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:4px 6px 4px 0;font:inherit;font-size:13px;text-decoration:none}
 .btn.p{background:var(--acc);color:#06122b;border-color:var(--acc)}svg{width:100%;height:auto;background:#0e1428;border-radius:12px;border:1px solid var(--line);touch-action:manipulation}
 .lg span{margin-right:12px;font-size:12px;color:var(--mut)}.lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.search{display:flex;gap:8px;padding:8px 16px 4px}
+.search input{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;color:var(--tx);font:14px ui-monospace,monospace}
+.search button{background:var(--acc);color:#06122b;border:none;border-radius:10px;padding:0 16px;font:14px/1 inherit;font-weight:600}
+.qv{margin:4px 16px 4px;padding:12px;border-radius:12px;background:var(--card);border:1px solid var(--line)}
+.qv .err{color:var(--r)}.buy{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 </style></head><body>
 <header><h1 id="t">Whale Scanner</h1><div class="sub" id="s">Loading…</div>
 <a class="btn p" id="rescan" href="#" target="_blank" style="margin-top:10px">Scan another token ↗</a></header>
+<div class="search"><input id="q" placeholder="Paste any token contract address" autocapitalize="off" autocorrect="off" spellcheck="false"><button id="qbtn">Look up</button></div>
+<div id="qv"></div>
 <div class="stats" id="stats"></div><div id="w"></div>
 <div class="sheet" id="sh"><div id="shc"></div></div><nav id="nav"></nav><main id="m"></main>
 <script>
@@ -87,6 +94,35 @@ document.addEventListener("click",e=>{const t=e.target.closest("[data-t]");if(t)
  const c=e.target.closest("[data-c]");if(c){navigator.clipboard&&navigator.clipboard.writeText(c.dataset.c);c.textContent="Copied ✓";return}
  if(e.target.closest("[data-x]")||e.target===$("sh")){$("sh").classList.remove("on");return}
  const a=e.target.closest("[data-a]");if(a)sheet(a.dataset.a)});
+const CHAIN_ID="4663", BS="https://api.blockscout.com/"+CHAIN_ID+"/api/v2";
+function buyLinks(addr){return `<div class="buy">
+ <a class="btn p" target="_blank" href="https://app.uniswap.org/swap?outputCurrency=${addr}&chain=robinhood">Buy on Uniswap ↗</a>
+ <a class="btn" target="_blank" href="${EXP}/token/${addr}">View on explorer ↗</a>
+ <a class="btn" target="_blank" href="https://dexscreener.com/search?q=${addr}">Check chart ↗</a>
+</div><div class="mut" style="margin-top:8px">Always confirm the contract address matches before swapping — fake tokens copy real names.</div>`}
+async function quickLookup(addr){
+ addr=(addr||"").trim().toLowerCase();
+ if(!/^0x[0-9a-f]{40}$/.test(addr)){$("qv").innerHTML='<div class="qv err">That does not look like a valid contract address (should start with 0x, 42 characters).</div>';return}
+ $("qv").innerHTML='<div class="qv mut">Looking up…</div>';
+ try{
+  const [info,holders]=await Promise.all([
+   fetch(`${BS}/tokens/${addr}`).then(r=>r.ok?r.json():null),
+   fetch(`${BS}/tokens/${addr}/holders`).then(r=>r.ok?r.json():null)]);
+  if(!info){$("qv").innerHTML='<div class="qv err">No token found at that address on Robinhood Chain.</div>';return}
+  const hn=holders&&holders.items?holders.items.length:null;
+  $("qv").innerHTML=`<div class="qv"><div class="row"><b>${esc(info.name||"Unknown")} (${esc(info.symbol||"?")})</b>${info.exchange_rate?`<span>$${esc(info.exchange_rate)}</span>`:""}</div>
+   <div class="mut">${A(addr)} · holders: ${esc(info.holders_count||info.holders||hn||"–")}${info.total_supply?" · supply "+n(Number(info.total_supply)/10**Number(info.decimals||18)):""}</div>
+   ${buyLinks(addr)}
+   <div style="margin-top:10px"><button class="btn p" id="deepscan" data-a="${addr}">Run full whale scan on GitHub ↗</button></div></div>`;
+ }catch(e){$("qv").innerHTML='<div class="qv err">Lookup failed — the explorer may be rate-limiting. Try again in a moment.</div>'}
+}
+$("qbtn").addEventListener("click",()=>quickLookup($("q").value));
+$("q").addEventListener("keydown",e=>{if(e.key==="Enter")quickLookup($("q").value)});
+document.addEventListener("click",e=>{const d=e.target.closest("#deepscan");if(d){
+ navigator.clipboard&&navigator.clipboard.writeText(d.dataset.a);
+ const repo=location.pathname.split("/").filter(Boolean)[0]||"";
+ window.open(`https://github.com/${location.hostname.split(".")[0]}/${repo}/actions/workflows/scan.yml`,"_blank");
+ d.textContent="Address copied — paste it in the token field ✓"}});
 fetch("latest.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;
  (d.early_buyers||[]).forEach(e=>(W[e.wallet]=W[e.wallet]||{}).e=e);(d.top_holders||[]).forEach(h=>(W[h.wallet]=W[h.wallet]||{}).h=h);
  $("t").textContent=(d.symbol||"Token")+" scan";$("s").textContent="Updated "+d.generated+" · "+sh(d.token);
@@ -97,4 +133,5 @@ fetch("latest.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).the
  if(d.truncated&&Object.keys(d.truncated).length)$("w").innerHTML='<div class="warn">History was cut off, so early buyers may be incomplete. Raise MAX_PAGES.</div>';
  draw()}).catch(()=>{$("s").textContent="No data yet. Run the Scan token workflow first."});
 </script></body></html>
+
 
